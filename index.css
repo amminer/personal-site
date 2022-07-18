@@ -1,3 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2em;
+}
+
+.main {
+  margin: 2vh 25vw;
+  display: block;
+}
+
+.image {
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.bio::first-line {
+  font-weight: bold;
 }
