@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
     />
   </head>
@@ -22,15 +22,15 @@
     <!-- force body to fill vw on small screens -->
     <div class="no-overflow">
       <nav
-        class="navbar navbar-dark navbar-expand-md justify-content-end sticky-top"
+        class="navbar navbar-dark navbar-expand-xl justify-content-end position-fixed fixed-top"
         id="navbar-header"
       >
         <button
-          class="navbar-toggler bg-dark"
+          class="navbar-toggler bg-dark shadow-lg border-light"
           data-toggle="collapse"
           data-target="#collapse-target"
         >
-          <span class="navbar-toggler-icon"></span>
+          Jump to... <span class="navbar-toggler-icon"></span>
         </button>
         <div
           class="collapse navbar-collapse justify-content-end"
@@ -38,48 +38,41 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item ml-auto bg-dark rounded px-1 m-2 border">
-              <a class="nav-link" href="#AboutMe-scroll-anchor">About Me</a>
+              <a class="nav-link" href="#AboutMe">About Me</a>
             </li>
             <li class="nav-item ml-auto bg-dark rounded px-1 m-2 border">
-              <a class="nav-link" href="#AboutMe-scroll-anchor">About Me</a>
-            </li>
-            <li class="nav-item ml-auto bg-dark rounded px-1 m-2 border">
-              <a class="nav-link" href="#AboutMe-scroll-anchor">About Me</a>
-            </li>
-            <li class="nav-item ml-auto bg-dark rounded px-1 m-2 border">
-              <a class="nav-link" href="#AboutMe-scroll-anchor">About Me</a>
+              <a class="nav-link" href="#PreviousWork">Previous Work</a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <main class="d-flex flex-column mt-0 mx-2 mx-md-4">
-        <section id="AboutMe" class="jumbotron-fluid w-75 m-auto">
-          <div class="scroll-anchor" id="AboutMe-scroll-anchor"></div>
+      <main class="d-flex flex-column mx-2 mx-md-4">
+        <section id="AboutMe" class="jumbotron-fluid w-75 m-auto py-3">
           <img
             src="../images/amelia.png"
             alt="Amelia resting on a bench with her bicycle"
-            class="img-fluid rounded-circle"
+            class="img-thumbnail rounded-circle"
             id="selfie"
           />
           <h1 class="d-inline-block align-middle border-bottom">
-            Hi,<br />I'm Amelia
+            Hi,<br />I'm Amelia.
           </h1>
-          <p>
-            and I'm a graduate student at Portland State University's Maseeh
-            College of Engineering and Computer Science with previous experience
-            in general biology. I'm interested in using computers to bridge the
+          <p class="mt-2">
+            I'm a graduate student at Portland State University's Maseeh College
+            of Engineering and Computer Science with previous experience in
+            general biology. I'm interested in using computers to bridge the
             gaps in-between people as well as between us and the rest of the
             natural world. I believe software is a uniquely powerful and
-            flexible tool for conveyance of meaning and understanding, opening
-            the door to experiences people would otherwise be unable to have. To
-            me, responsible and effective software engineering helps everyone to
-            better understand one another and facilitates easier, more
-            comfortable living for everyone.
+            flexible tool, opening doors to experiences people would otherwise
+            be unable to have. Responsible and effective software engineering
+            helps everyone to better understand one another and should
+            ultimately facilitate easier, more comfortable living for everyone.
           </p>
         </section>
 
-        <section>
+        <section id="PreviousWork" class="bootstrap-grid container py-3">
+          <h2>Some of my previous work includes...</h2>
           <p id="para1" style="font-size: 80px">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
             placeat dolores, quo non modi sit! Rem provident ducimus sapiente
@@ -101,13 +94,13 @@
         crossorigin="anonymous"
       ></script>
       <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"
       ></script>
       <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"
       ></script>
     </div>

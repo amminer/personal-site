@@ -23,16 +23,6 @@ body {
   overflow-x: hidden;
 }
 
-.title-card {
-  display: block;
-  margin: 2vh 25vw;
-}
-
-.scroll-anchor {
-  position: relative;
-  bottom: 100px;
-}
-
 #selfie {
   max-height: 200px;
 }
