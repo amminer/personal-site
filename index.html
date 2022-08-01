@@ -10,36 +10,106 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   </head>
 
-  <body>
-    <nav class="navbar">
-      <a class="navlink" href="#AboutMe">About Me</a>
-    </nav>
-    <main class="main">
-      <section id="AboutMe">
-        <img
-          src="../images/amelia.png"
-          alt="Amelia resting on a bench with her bicycle"
-          class="image"
-        />
-        <p class="bio">watch this space...</p>
-      </section>
-      <section>
-        <p style="font-size: 80px">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
-          placeat dolores, quo non modi sit! Rem provident ducimus sapiente
-          reiciendis magnam, reprehenderit illum facere odit at possimus nemo ea
-          ipsam!
+  <body class="bg-dark text-light">
+    <!-- force body to fill vw on small screens -->
+    <div class="no-overflow">
+      <nav
+        class="navbar navbar-dark navbar-expand-md justify-content-end sticky-top"
+        id="navbar-header"
+      >
+        <button
+          class="navbar-toggler bg-dark"
+          data-toggle="collapse"
+          data-target="#collapse-target"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="collapse-target"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item ml-auto bg-dark rounded px-1 m-2 border">
+              <a class="nav-link" href="#AboutMe-scroll-anchor">About Me</a>
+            </li>
+            <li class="nav-item ml-auto bg-dark rounded px-1 m-2 border">
+              <a class="nav-link" href="#AboutMe-scroll-anchor">About Me</a>
+            </li>
+            <li class="nav-item ml-auto bg-dark rounded px-1 m-2 border">
+              <a class="nav-link" href="#AboutMe-scroll-anchor">About Me</a>
+            </li>
+            <li class="nav-item ml-auto bg-dark rounded px-1 m-2 border">
+              <a class="nav-link" href="#AboutMe-scroll-anchor">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="d-flex flex-column mt-0 mx-2 mx-md-4">
+        <section id="AboutMe" class="jumbotron-fluid w-75 m-auto">
+          <div class="scroll-anchor" id="AboutMe-scroll-anchor"></div>
+          <img
+            src="../images/amelia.png"
+            alt="Amelia resting on a bench with her bicycle"
+            class="img-fluid rounded-circle"
+            id="selfie"
+          />
+          <h1 class="d-inline-block align-middle border-bottom">
+            Hi,<br />I'm Amelia
+          </h1>
+          <p>
+            and I'm a graduate student at Portland State University's Maseeh
+            College of Engineering and Computer Science with previous experience
+            in general biology. I'm interested in using computers to bridge the
+            gaps in-between people as well as between us and the rest of the
+            natural world. I believe software is a uniquely powerful and
+            flexible tool for conveyance of meaning and understanding, opening
+            the door to experiences people would otherwise be unable to have. To
+            me, responsible and effective software engineering helps everyone to
+            better understand one another and facilitates easier, more
+            comfortable living for everyone.
+          </p>
+        </section>
+
+        <section>
+          <p id="para1" style="font-size: 80px">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
+            placeat dolores, quo non modi sit! Rem provident ducimus sapiente
+            reiciendis magnam, reprehenderit illum facere odit at possimus nemo
+            ea ipsam!
+          </p>
+        </section>
+      </main>
+      <!--[if lt IE 7]>
+        <p class="browsehappy">
+          You are using an <strong>outdated</strong> browser. Please
+          <a href="#">upgrade your browser</a> to improve your experience.
         </p>
-      </section>
-    </main>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-    <script src="index.js" async defer></script>
+      <![endif]-->
+      <script src="index.js" async defer></script>
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+      ></script>
+    </div>
   </body>
 </html>

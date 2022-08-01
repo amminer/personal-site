@@ -12,7 +12,6 @@
 }
 
 body {
-  margin-top: 50px;
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2em;
 
@@ -20,39 +19,20 @@ body {
   background-color: var(--primaryBackground);
 }
 
-.navbar {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: var(--headerHeight);
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-
-  background-color: var(--secondaryBackground);
+.no-overflow {
+  overflow-x: hidden;
 }
 
-.navlink {
-  text-decoration: none;
-  font-size: medium;
-
-  color: var(--primaryText);
-}
-
-.main {
+.title-card {
+  display: block;
   margin: 2vh 25vw;
-  display: block;
 }
 
-.image {
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 0 auto;
-  text-align: center;
+.scroll-anchor {
+  position: relative;
+  bottom: 100px;
+}
+
+#selfie {
+  max-height: 200px;
 }
