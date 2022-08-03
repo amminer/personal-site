@@ -22,7 +22,7 @@
     <!-- force body to fill vw on small screens -->
     <div class="no-overflow">
       <nav
-        class="navbar navbar-dark navbar-expand-xl justify-content-end position-fixed fixed-top"
+        class="navbar navbar-dark navbar-expand-lg justify-content-end position-fixed fixed-top"
         id="navbar-header"
       >
         <button
@@ -54,18 +54,20 @@
       </nav>
 
       <main class="d-flex flex-column mx-2 mx-md-4">
-        <section id="AboutMe" class="jumbotron-fluid w-75 m-auto">
-          <div class="border-bottom py-3">
+        <section
+          id="AboutMe"
+          class="jumbotron-fluid w-90 my-3 mx-auto px-4 py-3 border-bottom"
+        >
+          <div class="">
             <img
               src="../images/amelia.png"
               alt="Amelia resting on a bench with her bicycle"
-              class="img-thumbnail rounded-circle"
+              class="img-thumbnail rounded-circle mx-auto mb-2"
               id="selfie"
             />
-            <h1
-              class="d-inline-block align-middle mx-1 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5 my-1 my-sm-2 my-md-3 my-lg-4 my-xl-5"
-            >
-              Hi,<br />I'm Amelia.
+            <h1 class="d-inline-block align-middle mx-2">
+              Hi,<br class="d-inline d-sm-none" />
+              I'm Amelia.
             </h1>
           </div>
           <p class="mt-2">
@@ -73,32 +75,85 @@
             of Engineering and Computer Science with previous experience in
             general biology. I'm interested in using computers to bridge the
             gaps in-between people as well as between us and the rest of the
-            natural world. I believe software is a uniquely powerful and
-            flexible tool, opening doors to experiences people would otherwise
-            be unable to have. Responsible and effective software engineering
-            helps everyone to better understand one another and should
-            ultimately facilitate easier, more comfortable living for everyone.
+            natural world.
+          </p>
+          <p class="d-none d-sm-block">
+            I believe software is a uniquely powerful and flexible tool, opening
+            doors to experiences people would otherwise be unable to have.
+            Responsible and effective software engineering helps everyone to
+            better understand one another and should ultimately facilitate
+            easier, more comfortable living for everyone.
           </p>
         </section>
 
-        <section id="PreviousWork" class="py-3">
-          <h2 class="w-auto">Some of my previous work includes...</h2>
+        <section id="PreviousWork" class="container text-left">
+          <h2 class="w-75 my-3 mx-auto">
+            Some of my previous work includes...
+          </h2>
           <div class="bootstrap-grid container">
-            <div class="row">
-              <div class="col-4">
-                <img src="../images/map.png" class="img-fluid p-5" />
+            <div class="row align-items-center rounded mb-3 p-1">
+              <div class="col-4 container">
+                <img src="../images/map2.png" class="img-fluid p-2 px-lg-5" />
               </div>
-              <div class="col-4">
-                <img src="../images/map.png" class="img-fluid p-5" />
+              <div class="col-md container p-2 p-md-4">
+                <h3 class="text-sm-center h4 pt-2 pl-3 border-top border-left">
+                  Engineering / GIS / CAD
+                </h3>
+                <p class="pb-2 px-2 border-bottom border-right">
+                  Working with engineering firms has given me insight into the
+                  ways that software is used and incorporated into existing
+                  toolchains in practice. I got my first taste of programming
+                  while trying to decipher my company's Python scripts at my
+                  first stormwater engineering tech job, many years ago while I
+                  was in college for biology.
+                </p>
               </div>
-              <div class="col-4">
-                <img src="../images/map.png" class="img-fluid p-5" />
+            </div>
+
+            <div class="row align-items-center rounded mb-3 p-1">
+              <div class="col-4 container">
+                <img src="../images/tube.png" class="img-fluid p-2 px-lg-5" />
+              </div>
+              <div class="col-md container p-2 p-md-4">
+                <h3 class="text-sm-center h4 pt-2 pl-3 border-top border-left">
+                  Clinical Testing Lab
+                </h3>
+                <p class="pb-2 px-2 border-bottom border-right">
+                  With the importance of HIIPA compliance always in focus,
+                  clinical laboratory work gave me insight into how software can
+                  be built around privacy concerns such that it not only
+                  complies to standards but actually makes them easier to meet.
+                  Good informatics workstation programs and automation tools
+                  take cognitive load off employees and ultimately enhance the
+                  experiences of the lab's customers, employees, and management
+                  all at once. <br />
+                </p>
+              </div>
+            </div>
+
+            <div class="row align-items-center rounded mb-3 p-1">
+              <div class="col-4 container">
+                <img src="../images/tc.png" class="img-fluid p-2 px-lg-5" />
+              </div>
+              <div class="col-md container p-2 p-md-4">
+                <h3 class="text-sm-center h4 pt-2 pl-3 border-top border-left">
+                  Plant Tissue Culture
+                </h3>
+                <p class="pb-2 px-2 border-bottom border-right">
+                  In my role as a tissue culture technician I had the
+                  opportunity to lead the digitization of an existing
+                  pen-and-paper system, which was valuable experience in so many
+                  ways. Working directly with the company's owner and the other
+                  technicians to set up a system that made sense for everyone as
+                  individuals and as a team was both challenging and satisfying.
+                </p>
               </div>
             </div>
           </div>
         </section>
+
         <section id="Projects" class="py-3">
-          <h2 class="w-auto">Some projects I've taken on...</h2>
+          <h2 class="w-auto my-3">Some projects I've taken on...</h2>
           <p style="font-size: 80px">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
             placeat dolores, quo non modi sit! Rem provident ducimus sapiente
@@ -107,7 +162,7 @@
           </p>
         </section>
         <section id="Contact" class="py-3">
-          <h2 class="w-auto">Reach out!</h2>
+          <h2 class="w-auto my-3">Reach out!</h2>
           <p style="font-size: 80px">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
             placeat dolores, quo non modi sit! Rem provident ducimus sapiente

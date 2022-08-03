@@ -7,6 +7,10 @@
   --headerHeight: 24px;
 }
 
+.w-90 {
+  width: 90% !important;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -25,4 +29,8 @@ body {
 
 #selfie {
   max-height: 200px;
+}
+
+.row.rounded {
+  background-color: var(--secondaryBackground);
 }
