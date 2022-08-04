@@ -47,7 +47,7 @@
               <a class="nav-link" href="#Projects">Projects</a>
             </li>
             <li class="nav-item bg-dark rounded px-1 my-2 ml-auto ml-lg-2 border">
-              <a class="nav-link" href="#Contact">Contact Me</a>
+              <a class="nav-link" href="javascript: document.body.scrollIntoView(false);">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -70,20 +70,24 @@
               I'm Amelia.
             </h1>
           </div>
-          <p class="mt-2 mb-0">
+          <div class="position-relative">
+            <div class="bio-border-left"></div>
+          <p class="mt-2 mb-0 px-3 py-2 border-top border-pink">
             I'm a graduate student at Portland State University's Maseeh College
             of Engineering and Computer Science with previous experience in
             general biology. I'm interested in using computers to bridge the
             gaps in-between people as well as between us and the rest of the
             natural world.
           </p>
-          <p class="d-none d-sm-block">
+          <div class="bio-border-bottom d-sm-none"></div>
+          <p class="d-none d-sm-block px-3 py-2 border-bottom border-right border-pink">
             I believe software is a uniquely powerful and flexible tool, opening
             doors to experiences people would otherwise be unable to have.
             Responsible and effective software engineering helps everyone to
-            better understand one another and should facilitate
+            better understand one another and facilitates
             easier, more comfortable living for everyone.
           </p>
+          </div>
         </section>
         <div class="pt-2 pt-md-4 mx-auto w-100 align-self-center border-bottom"></div>
 
@@ -183,7 +187,9 @@
             Reach out!
           </h2>
 
-          <form class="form container rounded mx-auto p-3 px-md-5">
+          <form class="form container position-relative rounded mx-auto py-4 px-5">
+          <div class="form-border-top"></div>
+          <div class="form-border-bottom"></div>
             <div class="form-group row mt-sm-3">
               <label for="name" class="col-form-label col-sm-2">Name: </label>
               <div class="col-sm-10">
@@ -213,10 +219,10 @@
             </div>
             <div class="form-group row mt-sm-3 mb-0 container mx-auto justify-content-around btn-container">
               <label for="submit" class="my-auto">
-                <input type="submit" name="submit" class="btn-block btn-dark rounded border px-4 py-2"/>
+                <input type="submit" name="submit" class="btn-block btn-dark rounded border px-4 py-2 mb-3"/>
               </label>
               <label for="reset" class="my-auto">
-                <input type="reset" name="reset" class="btn-block btn-dark rounded border px-4 py-2"/>
+                <input type="reset" name="reset" class="btn-block btn-dark rounded border px-4 py-2 mb-3"/>
               </label>
           </form>
         </section>

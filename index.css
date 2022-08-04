@@ -32,6 +32,7 @@ body {
 
 .nav-item.border,
 .navbar-toggler.border {
+  background-color: var(--secondaryBackground) !important;
   border-color: var(--secondaryColor) !important;
 }
 
@@ -50,6 +51,34 @@ section.border {
   border-bottom-width: 2px !important;
 }
 
+.bio-border-left {
+  border-left: 1px solid var(--primaryColor);
+  position: absolute;
+  height: 80%;
+  top: 0px;
+  left: 0px;
+
+  pointer-events: none;
+}
+
+@media screen and (min-width: 576px) {
+  .bio-border-left {
+    height: 50%;
+  }
+}
+
+.bio-border-bottom {
+  border-right: 1px solid var(--primaryColor);
+  border-bottom: 1px solid var(--primaryColor);
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  bottom: -3px;
+  right: 0px;
+
+  pointer-events: none;
+}
+
 .jumbotron-fluid {
   max-width: 1140px;
   background-color: var(--secondaryBackground);
@@ -58,7 +87,7 @@ section.border {
 #selfie {
   max-height: 200px;
   max-width: 200px;
-  border: 3px solid var(--primaryColor);
+  border: 2px solid var(--primaryColor);
 }
 
 h3.border-pink,
@@ -70,9 +99,33 @@ p.border-pink {
   background-color: var(--secondaryBackground);
 }
 
+.form-border-top {
+  border-left: 1px solid var(--primaryColor);
+  border-top: 1px solid var(--primaryColor);
+  position: absolute;
+  height: 70%;
+  width: 94%;
+  top: 5%;
+  left: 3%;
+
+  pointer-events: none;
+}
+
+.form-border-bottom {
+  border-right: 1px solid var(--primaryColor);
+  border-bottom: 1px solid var(--primaryColor);
+  position: absolute;
+  height: 70%;
+  width: 94%;
+  bottom: 5%;
+  right: 3%;
+
+  pointer-events: none;
+}
+
 .form {
   background-color: var(--secondaryBackground);
-  max-width: 786px !important;
+  max-width: 900px !important;
 }
 
 .form-control:focus {
