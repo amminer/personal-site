@@ -8,7 +8,7 @@ $(document).click((event) => {
 // Credit to Eric Olson on SO for this solution to my navbar troubles
 // https://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to
 function offsetAnchor() {
-  if (location.hash.length !== 0 && window.innerWidth > 778) {
+  if (location.hash.length !== 0 && window.innerWidth >= 992) {
     window.scrollTo(window.scrollX, window.scrollY - 65);
   }
 }
