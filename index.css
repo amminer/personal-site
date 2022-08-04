@@ -22,7 +22,6 @@
 body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2em;
-
   color: var(--primaryText);
   background-color: var(--primaryBackground);
 }
@@ -31,9 +30,30 @@ body {
   overflow-x: hidden;
 }
 
+.nav-item.border,
+.navbar-toggler.border {
+  border-color: var(--secondaryColor) !important;
+  transition: 0.3s;
+}
+
+.nav-item.border:hover {
+  background-color: var(--secondaryBackground) !important;
+}
+
+.nav-link {
+  color: var(--primaryText) !important;
+}
+
+div.border-bottom,
 section.border-bottom,
 section.border {
   border-color: var(--secondaryColor) !important;
+  border-bottom-width: 2px !important;
+}
+
+.jumbotron-fluid {
+  max-width: 1140px;
+  background-color: var(--secondaryBackground);
 }
 
 #selfie {
@@ -56,18 +76,26 @@ p.border-pink {
   max-width: 786px !important;
 }
 
+.form-control:focus {
+  border-color: var(--primaryColor) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 115, 148, 1) !important;
+}
+
 .btn-container {
   max-width: 300px !important;
 }
 
 .btn-block {
+  border-color: white !important;
   transition: 0.3s;
 }
 
 .btn-block[type='submit']:hover {
   background-color: var(--successColor);
+  color: var(--primaryBackground);
 }
 
 .btn-block[type='reset']:hover {
   background-color: var(--warningColor);
+  color: var(--primaryBackground);
 }

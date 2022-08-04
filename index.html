@@ -26,7 +26,7 @@
         id="navbar-header"
       >
         <button
-          class="navbar-toggler bg-dark border-light m-2"
+          class="navbar-toggler bg-dark border m-2"
           data-toggle="collapse"
           data-target="#collapse-target"
         >
@@ -56,7 +56,7 @@
       <main class="d-flex flex-column mx-2 mx-md-4">
         <section
           id="AboutMe"
-          class="jumbotron-fluid w-90 mt-3 mx-auto px-4 py-3 border"
+          class="jumbotron-fluid w-90 mt-3 mx-auto px-4 py-3 rounded"
         >
           <div>
             <img
@@ -66,7 +66,7 @@
               id="selfie"
             />
             <h1 class="d-inline-block align-middle mx-2">
-              Hi,<br class="d-inline d-sm-none" />
+              Hi,<br class="d-inline d-md-none" />
               I'm Amelia.
             </h1>
           </div>
@@ -81,10 +81,11 @@
             I believe software is a uniquely powerful and flexible tool, opening
             doors to experiences people would otherwise be unable to have.
             Responsible and effective software engineering helps everyone to
-            better understand one another and should ultimately facilitate
+            better understand one another and should facilitate
             easier, more comfortable living for everyone.
           </p>
         </section>
+        <div class="pt-2 pt-md-4 mx-auto w-100 align-self-center border-bottom"></div>
 
         <section id="PreviousWork" class="text-left pb-2 border-bottom">
           <h2 class="text-center my-3 mx-auto">
@@ -105,11 +106,11 @@
                   class="pb-2 px-2 border-bottom border-right border-pink"
                 >
                   Working with environmental and stormwater engineering firms
-                  has given me insight into the ways that software is used and
-                  incorporated into existing toolchains in practice. I got my
-                  first taste of programming while trying to decipher my
-                  company's Python scripts at my first stormwater engineering
-                  tech job, many years ago while I was in college for biology.
+                  has given me insight into the ways that software is used in the field and
+                  incorporated into existing toolchains. I got my
+                  first taste of programming while trying to decipher 
+                  Python scripts at my first stormwater engineering
+                  technician job many years ago, while I was in school for biology.
                 </p>
               </div>
             </div>
@@ -168,11 +169,12 @@
           <h2 class="text-center my-3 mx-auto">
             Some projects I've taken on...
           </h2>
-          <p style="font-size: 80px">
+          <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
             placeat dolores, quo non modi sit! Rem provident ducimus sapiente
             reiciendis magnam, reprehenderit illum facere odit at possimus nemo
-            ea ipsam!
+            ea ipsam! <br/>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo at asperiores iure quam eaque, officia ad nisi sapiente iste suscipit, debitis id reiciendis atque. Sequi omnis at enim a eos?
           </p>
         </section>
 
@@ -209,10 +211,10 @@
             </div>
             <div class="form-group row mt-sm-3 mb-0 container mx-auto justify-content-around btn-container">
               <label for="submit" class="my-auto">
-                <input type="submit" name="submit" class="btn-block rounded border-0 px-4 py-2"/>
+                <input type="submit" name="submit" class="btn-block btn-dark rounded border px-4 py-2"/>
               </label>
               <label for="reset" class="my-auto">
-                <input type="reset" name="reset" class="btn-block rounded border-0 px-4 py-2"/>
+                <input type="reset" name="reset" class="btn-block btn-dark rounded border px-4 py-2"/>
               </label>
           </form>
         </section>
@@ -229,7 +231,7 @@
         crossorigin="anonymous"
       ></script>
       <!-- collapse navbar on next click (depends on JQuery)-->
-      <script src="../scripts/hamburgerCollapse.js" async defer></script>
+      <script src="../scripts/hamburger.js" async defer></script>
       <!-- Bootstrap dependency (?) -->
       <script
         src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
