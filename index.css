@@ -71,6 +71,12 @@ section.border {
   }
 }
 
+@media screen and (max-width: 569px) {
+  .jumbotron-fluid {
+    width: 100% !important;
+  }
+}
+
 .bio-border-bottom {
   border-right: 1px solid var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
