@@ -3,6 +3,10 @@
   --secondaryText: #ddd;
   --primaryBackground: #111;
   --secondaryBackground: #223;
+  --primaryColor: #ff7393;
+  --secondaryColor: #89befd;
+  --successColor: #4fc976;
+  --warningColor: #eab554;
 
   --headerHeight: 24px;
 }
@@ -27,10 +31,43 @@ body {
   overflow-x: hidden;
 }
 
+section.border-bottom,
+section.border {
+  border-color: var(--secondaryColor) !important;
+}
+
 #selfie {
   max-height: 200px;
+  max-width: 200px;
+  border: 3px solid var(--primaryColor);
+}
+
+h3.border-pink,
+p.border-pink {
+  border-color: var(--primaryColor) !important;
 }
 
 .row.rounded {
   background-color: var(--secondaryBackground);
+}
+
+.form {
+  background-color: var(--secondaryBackground);
+  max-width: 786px !important;
+}
+
+.btn-container {
+  max-width: 300px !important;
+}
+
+.btn-block {
+  transition: 0.3s;
+}
+
+.btn-block[type='submit']:hover {
+  background-color: var(--successColor);
+}
+
+.btn-block[type='reset']:hover {
+  background-color: var(--warningColor);
 }
