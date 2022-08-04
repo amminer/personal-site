@@ -1,8 +1,9 @@
 :root {
   --primaryText: #eee;
   --secondaryText: #ddd;
-  --primaryBackground: #111;
+  --primaryBackground: #112;
   --secondaryBackground: #223;
+  --tertiaryBackground: #334;
   --primaryColor: #ff7393;
   --secondaryColor: #89befd;
   --successColor: #4fc976;
@@ -31,7 +32,8 @@ body {
 }
 
 .no-overflow {
-  overflow-x: hidden;
+  overflow-x: initial;
+  background-color: var(--primaryBackground);
 }
 
 .nav-item.border,
@@ -92,6 +94,12 @@ section.border {
 .jumbotron-fluid {
   max-width: 1140px;
   background-color: var(--secondaryBackground);
+  transition: all 0.3s ease-in-out !important;
+}
+.jumbotron-fluid:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: none;
+  opacity: 0.9;
 }
 
 #selfie {
@@ -115,7 +123,7 @@ p.border-pink {
   position: absolute;
   height: 70%;
   width: 93%;
-  top: 5%;
+  top: 25px;
   left: 3%;
 
   pointer-events: none;
@@ -127,7 +135,7 @@ p.border-pink {
   position: absolute;
   height: 70%;
   width: 93%;
-  bottom: 5%;
+  bottom: 25px;
   right: 3%;
 
   pointer-events: none;
@@ -143,21 +151,71 @@ p.border-pink {
   box-shadow: 0 0 0 0.2rem rgba(255, 115, 148, 1) !important;
 }
 
+/*
 .btn-container {
   max-width: 300px !important;
 }
+*/
 
-.btn-block {
+.btn-dark {
   border-color: white !important;
   transition: 0.3s;
 }
 
-.btn-block[type='submit']:hover {
+.btn-dark[type='submit']:hover {
   background-color: var(--successColor);
   color: var(--primaryBackground);
 }
 
-.btn-block[type='reset']:hover {
+.btn-dark[type='reset']:hover {
   background-color: var(--warningColor);
   color: var(--primaryBackground);
+}
+
+.card-block {
+  height: 300px;
+  background-color: #fff;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease-in-out !important;
+  border-radius: 24px;
+}
+.card-block:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: none;
+  opacity: 0.9;
+}
+
+.work-card {
+  transition: all 0.3s ease-in-out !important;
+}
+.work-card:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: none;
+  opacity: 0.9;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--tertiaryBackground);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--secondaryBackground);
+}
+
+.btn#info-btn {
+  color: var(--secondaryText);
+  background-color: var(--secondaryBackground);
+  width: 40px;
+  height: 40px;
+}
+.btn#info-btn:active {
+  background-color: var(--tertiaryBackground);
 }
