@@ -21,7 +21,7 @@ function offsetAnchor() {
 $(document).on('click', 'a[href^="#"]', (event) => {
   // Click events are captured before hash changes
   // Timeout causes offsetAnchor to be called after jump
-  window.setTimeout(function () {
+  window.setTimeout(() => {
     offsetAnchor();
   }, 0);
 });
