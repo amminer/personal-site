@@ -11,6 +11,10 @@
   --headerHeight: 24px;
 }
 
+.w-70 {
+  width: 70% !important;
+}
+
 .w-90 {
   width: 90% !important;
 }
