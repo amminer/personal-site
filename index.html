@@ -73,14 +73,14 @@
           </div>
           <div class="position-relative">
             <div class="bio-border-left"></div>
-          <p class="mt-2 mb-0 px-3 py-2 border-top border-pink">
+            <p class="mt-2 mb-0 px-3 py-2 border-top border-pink">
             I'm a graduate student at Portland State University's Maseeh College
             of Engineering and Computer Science with previous experience in
             general biology. I'm interested in using computers to bridge the
             gaps between people as well as between us and the rest of the
             natural world.
-          </p>
-          <div class="bio-border-bottom d-sm-none"></div>
+            </p>
+            <div class="bio-border-bottom d-sm-none"></div>
           <p class="d-none d-sm-block px-3 py-2 border-bottom border-right border-pink">
             I believe software is a uniquely powerful and flexible tool, opening
             doors to experiences people would otherwise be unable to have.
@@ -93,13 +93,13 @@
         <div class="pt-2 pt-md-4 mx-auto w-100 align-self-center border-bottom"></div>
 
         <section id="PreviousWork" class="text-left pb-2 border-bottom">
-          <h2 class="text-center my-3 mx-auto w-70">
+          <h2 class="text-xl-center text-left my-3 mx-2 mx-md-3 mx-lg-4 mx-xl-5 w-70">
             Some of my previous work includes...
           </h2>
           <div class="bootstrap-grid container">
             <div class="work-card row align-items-center rounded mb-3 p-1">
               <div class="col-4 container">
-                <img src="../images/map2.png" alt="A stylized trifold map with a pin in it" class="img-fluid p-2 px-lg-5" />
+                <img src="../images/map.png" alt="A stylized trifold map with a pin in it" class="img-fluid p-2 px-lg-5" />
               </div>
               <div class="col-md container p-2 p-md-4">
                 <h3
@@ -133,7 +133,7 @@
                 <p
                   class="pb-2 px-2 border-bottom border-right border-pink"
                 >
-                  With the importance of HIIPA compliance always in focus,
+                  With the importance of HIPAA compliance always in focus,
                   clinical laboratory work gave me insight into how software can
                   be built around privacy concerns such that it not only
                   complies to standards but actually makes them easier to meet.
@@ -171,32 +171,86 @@
         </section>
 
         <section id="Projects" class="pb-2 border-bottom">
-          <h2 class="text-center my-3 mx-auto w-70">
+          <h2 class="text-xl-center text-left my-3 mx-2 mx-md-3 mx-lg-4 mx-xl-5 w-70">
             Some projects I've taken on...
           </h2>
           <div class="container-fluid">
-            <div class="overflow-auto row flex-row flex-nowrap mt-4 pb-4 pt-2">
+            <div class="mx-auto scrollable-row overflow-auto row flex-row flex-nowrap mt-4 pb-4 pt-2">
               <div class="col-5">
-                <div class="card card-block"></div>
+                <div class="card card-block rounded border-0 h-100 p-4">
+                  <div class="project-border-top"></div>
+                  <h3 class="h4 text-center"><a href="https://github.com/amminer/animal-racing-simulator" target="_blank" class="project-link">
+                    Animal Racing Simulator
+                  </a></h3>
+                  <a href="../images/animalRacingSimulator_opaque.png" target="_blank">
+                  <img
+                    class="img-fluid d-none d-md-block project-img"
+                    alt="A screenshot of Animal Racing Simulator running, showing the main menu and a list of animals that are about to race"
+                    src="../images/animalRacingSimulator.png"/></a>
+                  <p class="project-description">
+                    A c++ game I wrote in CS202 that lets players pit animals against others in races, but with a twist - watch out for predator-prey interactions!
+                  </p>
+                  <p class="project-description d-none d-lg-block">
+                    I hope to some day add a career mode where players can earn winnings, buy new animals, and breed animals to become the animal racing champion (I played a lot of Pokemon as a kid!).
+                  </p>
+                  <div class="project-border-bottom"></div>
+                </div>
               </div>
               <div class="col-5">
-                <div class="card card-block"></div>
+                <div class="card card-block rounded border-0 h-100 p-4">
+                  <div class="project-border-top"></div>
+                  <h3 class="h4 text-center">
+                    <a href="https://github.com/amminer/animal-racing-simulator" target="_blank" class="project-link">
+                    Lightlapse
+                  </a></h3>
+                  <a href="../images/lightlapse_opaque.png" target="_blank">
+                  <img
+                  class="img-fluid d-none d-md-block project-img"
+                  alt="A screenshot of lightlapse running, with a simple GUI for managing the light timer and timelapse functions"
+                  src="../images/lightlapse.png"
+                  /></a>
+                  <p class="project-description">
+                    A Python program built for raspberry pi that aids in managing environmental conditions for plants and other photosynthetic organisms.
+                  </p>
+                  <p class="project-description d-none d-lg-block">
+                    I hope to some day get back to this and extend it to handle watering/feeding using a gravity-fed system with servos that open and close watering/feeding tubes, add multiple light/watering zones, etc.
+                  </p>
+                  <div class="project-border-bottom"></div>
+                </div>
               </div>
-              <div class="col-5">
-                <div class="card card-block"></div>
-              </div>
-              <div class="col-5">
-                <div class="card card-block"></div>
-              </div>
-              <div class="col-5">
-                <div class="card card-block"></div>
+              <div class="col-12 col-md-8 text-wra pr-3">
+                <div class="card card-block rounded border-0 h-100 p-4">
+                  <div class="project-border-top"></div>
+                  <h3 class="h5 mt-md-1 mb-md-2">Additionally, some goals...</h3>
+                  <ul>
+                    <li>
+                      <h4 class="h5 mb-0">MoviesWithMolly.com</h4>
+                      <p class="small mb-1 mb-md-0">
+                        Users can submit and view start times and durations of emotionally difficult scenes.
+                      </p>
+                      <p class="small d-none d-md-block">
+                        Many people in my life, especially Molly, would really appreciate a service like this - it would enable them to access and enjoy media that would otherwise be dangerous to watch.
+                      </p>
+                    </li>
+                    <li>
+                      <h4 class="h5 mb-0">JustStopCalling.com</h4>
+                      <p class="small mb-1 mb-md-0">
+                        Makes reporting spam to donotcall.gov easier.
+                      </p>
+                      <p class="small d-none d-md-block">
+                        The .gov site is quite cumbersome to use and often requires more information than is really necessary.
+                      </p>
+                    </li>
+                    <h4 class="h5 d-none d-md-block"><br/>... And many more!</h4> 
+                  </ul>
+                  <div class="project-border-bottom"></div>
               </div>
             </div>
           </div>
         </section>
 
         <section id="Contact" class="pb-3 border-bottom">
-          <h2 class="text-center my-3 mx-auto w-70">
+          <h2 class="text-xl-center text-left my-3 mx-2 mx-md-3 mx-lg-4 mx-xl-5 w-70">
             Reach out!
           </h2>
 
