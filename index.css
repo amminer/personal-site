@@ -234,13 +234,13 @@ div.col-5 {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--tertiaryBackground);
+  background-color: var(--secondaryBackground);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: var(--secondaryBackground);
+  background-color: var(--tertiaryBackground);
 }
 
 .btn#info-btn {
@@ -249,6 +249,7 @@ div.col-5 {
   width: 40px;
   height: 40px;
   font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
 }
 .btn#info-btn:active {
   background-color: var(--tertiaryBackground);
