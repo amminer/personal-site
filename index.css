@@ -163,6 +163,13 @@ a.project-link {
 .flex-row.flex-nowrap {
   height: 320px;
 }
+@media screen and (max-width: 768px) {
+  p.project-description {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .flex-row.flex-nowrap {
     height: 520px;
