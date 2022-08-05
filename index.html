@@ -171,11 +171,11 @@
         </section>
 
         <section id="Projects" class="pb-2 border-bottom">
-          <h2 class="text-xl-center text-left my-3 mx-2 mx-md-3 mx-lg-4 mx-xl-5 w-70">
+          <h2 class="text-xl-center text-left mb-0 pb-0 mt-3 mx-2 mx-md-3 mx-lg-4 mx-xl-5 w-70">
             Some projects I've taken on...
           </h2>
           <div class="container-fluid">
-            <div class="mx-auto scrollable-row overflow-auto row flex-row flex-nowrap mt-4 pb-4 pt-2">
+            <div class="mx-auto scrollable-row overflow-auto row flex-row flex-nowrap mt-2 pb-4 pt-3">
               <div class="col-5">
                 <div class="card card-block rounded border-0 h-100 p-4">
                   <div class="project-border-top"></div>
@@ -188,7 +188,7 @@
                     alt="A screenshot of Animal Racing Simulator running, showing the main menu and a list of animals that are about to race"
                     src="../images/animalRacingSimulator.png"/></a>
                   <p class="project-description">
-                    A c++ game I wrote in CS202 that lets players pit animals against others in races, but with a twist - watch out for predator-prey interactions!
+                    A C++ game I wrote in CS202 that lets players race animals against each other, but with a twist - watch out for predator-prey interactions!
                   </p>
                   <p class="project-description d-none d-lg-block">
                     I hope to add a mode where players earn winnings to buy and breed new animals with commensurate stats (I played a lot of Pokemon as a kid!).
@@ -218,30 +218,61 @@
                   <div class="project-border-bottom"></div>
                 </div>
               </div>
+              <div class="col-5">
+                <div class="card card-block rounded border-0 h-100 p-4">
+                  <div class="project-border-top"></div>
+                  <h3 class="h4 text-center">
+                    <a href="https://github.com/amminer/asciifier" target="_blank" class="project-link">
+                    Asciifier
+                  </a></h3>
+                  <a href="../images/asciifier_opaque.png" target="_blank">
+                  <img
+                  class="img-fluid d-none d-md-block project-img mx-auto"
+                  alt="A screenshot of lightlapse running, with a simple GUI for managing the light timer and timelapse functions"
+                  src="../images/asciifier.png"
+                  /></a>
+                  <p class="project-description">
+                    A Python script that creates an ascii representation of an image in the terminal.
+                  </p>
+                  <p class="project-description d-none d-lg-block">
+                    Eventually I want to modify this so that it determines what character to use based on the brightness (or some similar metric) of the sector that character represents.
+                  </p>
+                  <div class="project-border-bottom"></div>
+                </div>
+              </div>
               <div class="col-12 col-md-8 text-wra pr-3">
                 <div class="card card-block rounded border-0 h-100 p-4">
                   <div class="project-border-top"></div>
                   <h3 class="h5 mt-md-1 mb-md-2">Additionally, some goals...</h3>
                   <ul>
                     <li>
-                      <h4 class="h5 mb-0">MoviesWithMolly.com</h4>
-                      <p class="small mb-1 mb-md-0">
-                        Users can submit and view start times and durations of emotionally difficult scenes.
+                      <h4 class="h5 mb-0 mb-md-2">MoviesWithMolly.com</h4>
+                      <p class="small mb-0 mb-md-0">
+                        User-maintained database of emotionally difficult scenes in films.
                       </p>
                       <p class="small d-none d-md-block">
                         Many people in my life, especially Molly, would really appreciate a service like this - it would enable them to access and enjoy media that would otherwise be dangerous to watch.
                       </p>
                     </li>
                     <li>
-                      <h4 class="h5 mb-0">JustStopCalling.com</h4>
-                      <p class="small mb-1 mb-md-0">
+                      <h4 class="h5 mb-0 mb-md-2">JustStopCalling.com</h4>
+                      <p class="small mb-0">
                         Makes reporting spam to donotcall.gov easier.
                       </p>
-                      <p class="small d-none d-md-block">
+                      <p class="small mb-2 d-none d-md-block">
                         The .gov site is quite cumbersome to use and often requires more information than is really necessary.
                       </p>
                     </li>
-                    <h4 class="h5 d-none d-md-block"><br/>... And many more!</h4> 
+                    <li>
+                      <h4 class="h5 mb-0 mb-md-2">PhotoTextifi.er</h4>
+                      <p class="small mb-0">
+                        Makes ascii art from images.
+                      </p>
+                      <p class="small mb-0 d-none d-lg-block">
+                        I've already written (most of) a python program to do this - I think it would be cool to expose it to the web.
+                      </p>
+                    </li>
+                    <h4 class="h5 align-text-top d-none d-lg-block"><br/>... And I'm always thinking up more!</h4> 
                   </ul>
                   <div class="project-border-bottom"></div>
               </div>
@@ -254,7 +285,7 @@
             Reach out!
           </h2>
 
-          <form class="form container position-relative rounded mx-auto py-4 px-5">
+          <form id="contact-form" class="form container position-relative rounded mx-auto py-4 px-5">
           <div class="form-border-top"></div>
           <div class="form-border-bottom"></div>
             <div class="form-group row mt-sm-3">
