@@ -196,6 +196,7 @@ p.border-pink {
 .project-img {
   max-height: 300px;
   object-fit: contain;
+  padding-bottom: 10px;
 }
 
 .card.card-block {
