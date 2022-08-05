@@ -1,3 +1,5 @@
+/*-- WHOLE-DOCUMENT STYLES --*/
+
 :root {
   --primaryText: #eee;
   --secondaryText: #ddd;
@@ -10,6 +12,20 @@
   --warningColor: #eab554;
 
   --headerHeight: 24px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--secondaryBackground);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--tertiaryBackground);
 }
 
 .w-70 {
@@ -36,6 +52,20 @@ body {
   background-color: var(--primaryBackground);
 }
 
+div.border-bottom,
+section.border-bottom,
+section.border {
+  border-color: var(--secondaryColor) !important;
+  border-bottom-width: 2px !important;
+}
+
+h3.border-pink,
+p.border-pink {
+  border-color: var(--primaryColor) !important;
+}
+
+/*-- NAVBAR --*/
+
 .nav-item.border,
 .navbar-toggler.border {
   background-color: var(--secondaryBackground) !important;
@@ -46,57 +76,13 @@ body {
   background-color: var(--secondaryBackground) !important;
 }
 
+/* ALSO AFFECTS PROJECTS SECTION */
 .nav-link,
 a.project-link {
   color: var(--primaryText) !important;
 }
 
-.project-link:after {
-  content: URL('../images/externalLink.png');
-  width: 20px;
-  height: 20px;
-}
-
-div.border-bottom,
-section.border-bottom,
-section.border {
-  border-color: var(--secondaryColor) !important;
-  border-bottom-width: 2px !important;
-}
-
-.bio-border-left {
-  border-left: 1px solid var(--primaryColor);
-  position: absolute;
-  height: 80%;
-  top: 0px;
-  left: 0px;
-
-  pointer-events: none;
-}
-
-@media screen and (min-width: 576px) {
-  .bio-border-left {
-    height: 50%;
-  }
-}
-
-@media screen and (max-width: 569px) {
-  .jumbotron-fluid {
-    width: 100% !important;
-  }
-}
-
-.bio-border-bottom {
-  border-right: 1px solid var(--primaryColor);
-  border-bottom: 1px solid var(--primaryColor);
-  position: absolute;
-  height: 80%;
-  width: 100%;
-  bottom: -3px;
-  right: 0px;
-
-  pointer-events: none;
-}
+/*-- ABOUT ME --*/
 
 .jumbotron-fluid {
   max-width: 1140px;
@@ -109,74 +95,69 @@ section.border {
   opacity: 0.9;
 }
 
+@media screen and (max-width: 569px) {
+  .jumbotron-fluid {
+    width: 100% !important;
+  }
+}
+
+.bio-border-left {
+  border-left: 1px solid var(--primaryColor);
+  position: absolute;
+  height: 80%;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 576px) {
+  .bio-border-left {
+    height: 50%;
+  }
+}
+
+.bio-border-bottom {
+  border-right: 1px solid var(--primaryColor);
+  border-bottom: 1px solid var(--primaryColor);
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  bottom: -3px;
+  right: 0px;
+  pointer-events: none;
+}
+
 #selfie {
   max-height: 200px;
   max-width: 200px;
   border: 2px solid var(--primaryColor);
 }
 
-h3.border-pink,
-p.border-pink {
-  border-color: var(--primaryColor) !important;
-}
+/*-- PREVIOUS WORK --*/
 
 .row.rounded {
   background-color: var(--secondaryBackground);
 }
 
-.form-border-top {
-  border-left: 1px solid var(--primaryColor);
-  border-top: 1px solid var(--primaryColor);
-  position: absolute;
-  height: 70%;
-  width: 93%;
-  top: 25px;
-  left: 3%;
-
-  pointer-events: none;
+.work-card {
+  transition: all 0.3s ease-in-out !important;
+}
+.work-card:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: none;
+  opacity: 0.9;
 }
 
-.form-border-bottom {
-  border-right: 1px solid var(--primaryColor);
-  border-bottom: 1px solid var(--primaryColor);
-  position: absolute;
-  height: 70%;
-  width: 93%;
-  bottom: 25px;
-  right: 3%;
+/*-- PROJECTS --*/
 
-  pointer-events: none;
+.scrollable-row {
+  max-width: fit-content;
 }
 
-.form {
-  background-color: var(--secondaryBackground);
-  max-width: 900px !important;
-}
-
-.form-control:focus {
-  border-color: var(--primaryColor) !important;
-  box-shadow: 0 0 0 0.2rem rgba(255, 115, 148, 1) !important;
-}
-
-/*
-.btn-container {
-  max-width: 300px !important;
-}
-*/
-
-.btn-dark {
-  border-color: white !important;
-  transition: 0.3s;
-}
-
-.btn-dark[type='submit']:hover {
-  background-color: var(--successColor);
-  color: var(--primaryBackground);
-}
-
-.btn-dark[type='reset']:hover {
-  background-color: var(--warningColor);
-  color: var(--primaryBackground);
+.project-link:after {
+  content: URL('../images/externalLink.png');
+  width: 20px;
+  height: 20px;
 }
 
 .flex-row.flex-nowrap {
@@ -221,41 +202,6 @@ div.col-5 {
   opacity: 0.9;
 }
 
-.work-card {
-  transition: all 0.3s ease-in-out !important;
-}
-.work-card:hover {
-  transform: scale(1.05, 1.05);
-  box-shadow: none;
-  opacity: 0.9;
-}
-
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--secondaryBackground);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: var(--tertiaryBackground);
-}
-
-.btn#info-btn {
-  color: var(--secondaryText);
-  background-color: var(--secondaryBackground);
-  width: 40px;
-  height: 40px;
-  font-style: italic;
-  font-family: 'Times New Roman', Times, serif;
-}
-.btn#info-btn:active {
-  background-color: var(--tertiaryBackground);
-}
-
 .project-border-top {
   border-left: 1px solid var(--primaryColor);
   border-top: 1px solid var(--primaryColor);
@@ -280,6 +226,66 @@ div.col-5 {
   pointer-events: none;
 }
 
-.scrollable-row {
-  max-width: fit-content;
+/*-- FORM --*/
+
+.form {
+  background-color: var(--secondaryBackground);
+  max-width: 900px !important;
+}
+
+.form-control:focus {
+  border-color: var(--primaryColor) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 115, 148, 1) !important;
+}
+
+.form-border-top {
+  border-left: 1px solid var(--primaryColor);
+  border-top: 1px solid var(--primaryColor);
+  position: absolute;
+  height: 70%;
+  width: 93%;
+  top: 25px;
+  left: 3%;
+  pointer-events: none;
+}
+
+.form-border-bottom {
+  border-right: 1px solid var(--primaryColor);
+  border-bottom: 1px solid var(--primaryColor);
+  position: absolute;
+  height: 70%;
+  width: 93%;
+  bottom: 25px;
+  right: 3%;
+  pointer-events: none;
+}
+
+.btn-dark {
+  border-color: white !important;
+  transition: 0.3s;
+}
+
+.btn-dark[type='submit']:hover {
+  background-color: var(--successColor);
+  color: var(--primaryBackground);
+}
+
+.btn-dark[type='reset']:hover {
+  background-color: var(--warningColor);
+  color: var(--primaryBackground);
+}
+
+/*-- FOOTER --*/
+
+.btn#info-btn {
+  color: var(--secondaryText);
+  background-color: var(--secondaryBackground);
+  width: 40px;
+  height: 40px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.btn#info-btn:active {
+  background-color: var(--tertiaryBackground);
 }

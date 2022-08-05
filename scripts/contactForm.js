@@ -1,23 +1,21 @@
-// Initialize with public key
-(() => {
-  emailjs.init('idTbU1MrUkQBudGaA');
+(function () {
+  // https://dashboard.emailjs.com/admin/account
+  return emailjs.init('idTbU1MrUkQBudGaA');
 })();
-
-// Set up event listener for submission
-window.onload = () => {
+window.onload = function () {
   document
     .getElementById('contact-form')
-    .addEventListener('submit', (event) => {
+    .addEventListener('submit', function (event) {
       event.preventDefault();
       // generate a five digit number for the contact_number variable
-      this.contact_number.value = (Math.random() * 100000) | 0;
+      //this.contact_number.value = Math.random() * 100000 | 0;
       // these IDs from the previous steps
-      emailjs.sendForm('contact_service', 'contact_form', this).then(
-        () => {
+      emailjs.sendForm('personal-site', 'template_x62c35i', this).then(
+        function () {
           console.log('SUCCESS!');
         },
-        (error) => {
-          console.log('FAILED: ', error);
+        function (error) {
+          console.log('FAILED...', error);
         }
       );
     });
