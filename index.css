@@ -152,11 +152,6 @@ a.project-link {
   width: 20px;
   height: 20px;
 }
-.image-link:after {
-  content: URL('../images/externalLink_mini.png');
-  width: 12px;
-  height: 12px;
-}
 
 /* fix scrolling row dimensions for various screen sizes */
 .flex-row.flex-nowrap {
@@ -236,15 +231,6 @@ p.project-description {
   right: 10px;
 
   pointer-events: none;
-}
-
-/* Give me pink lines around everything or give me death */
-.image-link > p.pink-bracket {
-  color: var(--primaryColor);
-}
-/* Also need to make sure links aren't blue because it's 2022 */
-.image-link > p {
-  color: var(--primaryText);
 }
 
 /*------------------------- FORM -------------------------*/
