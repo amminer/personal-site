@@ -29,6 +29,14 @@ function formValidate() {
     return false;
   }
   return true;
+  //let inputs = $('#contact-form :input'); // TODO make JQuery do this?
+  //inputs.each(() => {
+  //if (this.value === '') {
+  //window.alert('Message could not be sent - please fill all fields.');
+  //return false;
+  //}
+  //return true;
+  //});
 }
 
 function formSubmit(event) {
