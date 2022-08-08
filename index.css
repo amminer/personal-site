@@ -17,12 +17,10 @@
 ::-webkit-scrollbar {
   width: 12px;
 }
-
 ::-webkit-scrollbar-track {
   background-color: var(--secondaryBackground);
   border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: var(--tertiaryBackground);
@@ -31,13 +29,8 @@
 .w-70 {
   width: 70% !important;
 }
-
 .w-90 {
   width: 90% !important;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
@@ -47,75 +40,72 @@ body {
   background-color: var(--primaryBackground);
 }
 
+/* Prevents body width issues on small screens */
 .no-overflow {
   overflow-x: initial;
   background-color: var(--primaryBackground);
 }
 
-div.border-bottom,
-section.border-bottom,
-section.border {
+/* Secondary color thicker borders between sections */
+.section.border-bottom {
   border-color: var(--secondaryColor) !important;
   border-bottom-width: 2px !important;
 }
 
+/* Primary color borders for certain text elements -
+ * this is used in jumbotron and work cards
+ */
 h3.border-pink,
 p.border-pink {
   border-color: var(--primaryColor) !important;
 }
 
-/*-- NAVBAR --*/
-
-.nav-item.border,
-.navbar-toggler.border {
-  background-color: var(--secondaryBackground) !important;
-  border-color: var(--secondaryColor) !important;
-}
-
-.nav-item.border:hover {
-  background-color: var(--secondaryBackground) !important;
-}
-
-/* ALSO AFFECTS PROJECTS SECTION */
+/* Changes all link colors (non-nav links are indicated with an icon) */
 .nav-link,
 a.project-link {
   color: var(--primaryText) !important;
 }
 
-/*-- ABOUT ME --*/
+/*------------------------- NAVBAR -------------------------*/
 
+/* Override bootstrap default colors for nav */
+.nav-item.border,
+.navbar-toggler.border {
+  background-color: var(--secondaryBackground) !important;
+  border-color: var(--secondaryColor) !important;
+}
+.nav-item.border:hover {
+  background-color: var(--secondaryBackground) !important;
+}
+
+/*------------------------- ABOUT ME -------------------------*/
+
+/* Constrain jumbotron dimensions, add card background color and transition */
 .jumbotron-fluid {
   max-width: 1140px;
   background-color: var(--secondaryBackground);
-  transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out;
 }
 .jumbotron-fluid:hover {
   transform: scale(1.05, 1.05);
   box-shadow: none;
-  opacity: 0.9;
 }
-
 @media screen and (max-width: 569px) {
   .jumbotron-fluid {
     width: 100% !important;
   }
 }
 
+/* Wrap bio in border independent of second paragraph display state */
 .bio-border-left {
+  /* top border handled with bootstrap class on text tag */
   border-left: 1px solid var(--primaryColor);
   position: absolute;
   height: 80%;
-  top: 0px;
+  top: 1px;
   left: 0px;
   pointer-events: none;
 }
-
-@media screen and (min-width: 576px) {
-  .bio-border-left {
-    height: 50%;
-  }
-}
-
 .bio-border-bottom {
   border-right: 1px solid var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
@@ -126,33 +116,33 @@ a.project-link {
   right: 0px;
   pointer-events: none;
 }
+/* adjust for when second paragraph is not displayed */
+@media screen and (min-width: 576px) {
+  .bio-border-left {
+    height: 50%;
+  }
+}
 
+/* constrain bio image size, override bootstrap border color */
 #selfie {
   max-height: 200px;
   max-width: 200px;
   border: 2px solid var(--primaryColor);
 }
 
-/*-- PREVIOUS WORK --*/
+/*------------------------- PREVIOUS WORK -------------------------*/
 
-.row.rounded {
-  background-color: var(--secondaryBackground);
-}
-
+/* color and add transition */
 .work-card {
+  background-color: var(--secondaryBackground);
   transition: all 0.3s ease-in-out !important;
 }
 .work-card:hover {
   transform: scale(1.05, 1.05);
   box-shadow: none;
-  opacity: 0.9;
 }
 
-/*-- PROJECTS --*/
-
-.scrollable-row {
-  max-width: fit-content;
-}
+/*------------------------- PROJECTS -------------------------*/
 
 /* Centers the final card for xxs screens (iPhone SE, for example) */
 @media screen and (max-width: 376px) {
@@ -169,61 +159,68 @@ a.project-link {
   }
 }
 
+/* Indicate external links with a simple icon */
 .project-link:after {
   content: URL('../images/externalLink.png');
   width: 20px;
   height: 20px;
 }
 
+/* fix scrolling row dimensions for various screen sizes */
 .flex-row.flex-nowrap {
-  height: 320px;
+  max-width: fit-content; /* centers on xxwide screens */
+  height: 320px; /* min height */
 }
-
-p.project-description {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
+/* md */
 @media screen and (min-width: 768px) {
   .flex-row.flex-nowrap {
     height: 520px;
   }
 }
+/* lg */
 @media screen and (min-width: 992px) {
   .flex-row.flex-nowrap {
     height: 670px;
   }
 }
 
-.project-img {
-  max-height: 300px;
-  object-fit: contain;
-  padding-bottom: 10px;
+/* Fix card dimensions in harmony with row dimensions */
+div.col-5 {
+  min-width: 350px;
+  max-width: 600px;
 }
-
-.card.card-block {
-  background-color: var(--secondaryBackground) !important;
-  transition: all 0.3s ease-in-out !important;
-}
-
+/* Final card */
 div.col-12 {
   min-width: 360px !important;
   max-width: 500px !important;
   max-height: 620px !important;
 }
 
-div.col-5 {
-  min-width: 350px;
-  max-width: 600px;
+/* center project descriptions in their areas of the card */
+p.project-description {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
+/* fix project image dimensions */
+.project-img {
+  max-height: 300px;
+  object-fit: contain;
+  padding-bottom: 10px;
+}
+
+/* Give cards their bg color and hover animations */
+.card.card-block {
+  background-color: var(--secondaryBackground) !important;
+  transition: all 0.3s ease-in-out !important;
+}
 .card-block:hover {
   transform: scale(1.05, 1.05);
   box-shadow: none;
-  opacity: 0.9;
 }
 
+/* Replicate similar borders found elsewhere on page */
 .project-border-top {
   border-left: 1px solid var(--primaryColor);
   border-top: 1px solid var(--primaryColor);
@@ -235,7 +232,6 @@ div.col-5 {
 
   pointer-events: none;
 }
-
 .project-border-bottom {
   border-right: 1px solid var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
@@ -248,18 +244,21 @@ div.col-5 {
   pointer-events: none;
 }
 
-/*-- FORM --*/
+/*------------------------- FORM -------------------------*/
 
+/* give form background color and fix max width to prevent awkward proportions */
 .form {
   background-color: var(--secondaryBackground);
   max-width: 900px !important;
 }
 
+/* Custom input surround color */
 .form-control:focus {
   border-color: var(--primaryColor) !important;
-  box-shadow: 0 0 0 0.2rem rgba(255, 115, 148, 1) !important;
+  box-shadow: 0 0 0 0.2rem var(--primaryColor) !important;
 }
 
+/* Replicate similar borders found elsewhere on page */
 .form-border-top {
   border-left: 1px solid var(--primaryColor);
   border-top: 1px solid var(--primaryColor);
@@ -270,7 +269,6 @@ div.col-5 {
   left: 3%;
   pointer-events: none;
 }
-
 .form-border-bottom {
   border-right: 1px solid var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
@@ -282,22 +280,21 @@ div.col-5 {
   pointer-events: none;
 }
 
+/* Color form buttons and give them hover animations */
 .btn-dark {
   border-color: white !important;
   transition: 0.3s;
 }
-
 .btn-dark[type='submit']:hover {
   background-color: var(--successColor);
   color: var(--primaryBackground);
 }
-
 .btn-dark[type='reset']:hover {
   background-color: var(--warningColor);
   color: var(--primaryBackground);
 }
 
-/*-- FOOTER --*/
+/*------------------------- FOOTER -------------------------*/
 
 .btn#info-btn {
   color: var(--secondaryText);
@@ -307,7 +304,6 @@ div.col-5 {
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
 }
-
 .btn#info-btn:active {
   background-color: var(--tertiaryBackground);
 }
