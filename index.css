@@ -78,23 +78,25 @@ a.project-link {
 
 /*------------------------- NAVBAR -------------------------*/
 
-/* Override bootstrap default colors for nav */
+/* Override bootstrap default colors and add transition details for card-like components */
 .nav-item.border,
-.navbar-toggler.border {
+.navbar-toggler.border,
+.work-card,
+.card.card-block,
+.jumbotron-fluid {
   background-color: var(--secondaryBackground) !important;
   border-color: var(--secondaryColor) !important;
+  transition: all 0.3s ease-in-out;
 }
 .nav-item.border:hover {
-  background-color: var(--secondaryBackground) !important;
+  background-color: var(--tertiaryBackground) !important;
 }
 
 /*------------------------- ABOUT ME -------------------------*/
 
-/* Constrain jumbotron dimensions, add card background color and transition */
+/* Constrain jumbotron dimensions */
 .jumbotron-fluid {
   max-width: 1140px;
-  background-color: var(--secondaryBackground);
-  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 575px) {
   .jumbotron-fluid {
@@ -138,11 +140,7 @@ a.project-link {
 
 /*------------------------- PREVIOUS WORK -------------------------*/
 
-/* color and add transition */
-.work-card {
-  background-color: var(--secondaryBackground);
-  transition: all 0.3s ease-in-out !important;
-}
+/* see page-wide selectors */
 
 /*------------------------- PROJECTS -------------------------*/
 
@@ -200,12 +198,6 @@ p.project-description {
 .project-img {
   max-height: 300px;
   object-fit: contain;
-}
-
-/* Give cards their bg color and hover animations */
-.card.card-block {
-  background-color: var(--secondaryBackground) !important;
-  transition: all 0.3s ease-in-out !important;
 }
 
 /* Replicate similar borders found elsewhere on page */
@@ -271,7 +263,7 @@ p.project-description {
 /* Color form buttons and give them hover animations */
 .btn-dark {
   border-color: white !important;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out !important;
 }
 .btn-dark[type='submit']:hover {
   background-color: var(--successColor);
