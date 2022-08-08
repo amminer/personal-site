@@ -66,6 +66,16 @@ a.project-link {
   color: var(--primaryText) !important;
 }
 
+/* scale cards on hover for large enough screens */
+@media screen and (min-width: 576px) {
+  .jumbotron-fluid:hover,
+  .card-block:hover,
+  .work-card:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: none;
+  }
+}
+
 /*------------------------- NAVBAR -------------------------*/
 
 /* Override bootstrap default colors for nav */
@@ -86,11 +96,7 @@ a.project-link {
   background-color: var(--secondaryBackground);
   transition: all 0.3s ease-in-out;
 }
-.jumbotron-fluid:hover {
-  transform: scale(1.05, 1.05);
-  box-shadow: none;
-}
-@media screen and (max-width: 569px) {
+@media screen and (max-width: 575px) {
   .jumbotron-fluid {
     width: 100% !important;
   }
@@ -137,33 +143,19 @@ a.project-link {
   background-color: var(--secondaryBackground);
   transition: all 0.3s ease-in-out !important;
 }
-.work-card:hover {
-  transform: scale(1.05, 1.05);
-  box-shadow: none;
-}
 
 /*------------------------- PROJECTS -------------------------*/
-
-/* Centers the final card for xxs screens (iPhone SE, for example) */
-@media screen and (max-width: 376px) {
-  div[class^='col-']:last-of-type {
-    padding-right: 0 !important;
-  }
-}
-/* Adds another breakpoint for final card centering between my xxs and B4's xs;
- * this is equivalent padding to .pr-2
- */
-@media screen and (min-width: 377px) and (max-width: 575px) {
-  div[class^='col-']:last-of-type {
-    padding-right: 0.25rem !important;
-  }
-}
 
 /* Indicate external links with a simple icon */
 .project-link:after {
   content: URL('../images/externalLink.png');
   width: 20px;
   height: 20px;
+}
+.image-link:after {
+  content: URL('../images/externalLink_mini.png');
+  width: 12px;
+  height: 12px;
 }
 
 /* fix scrolling row dimensions for various screen sizes */
@@ -174,7 +166,7 @@ a.project-link {
 /* md */
 @media screen and (min-width: 768px) {
   .flex-row.flex-nowrap {
-    height: 520px;
+    height: 525px;
   }
 }
 /* lg */
@@ -215,10 +207,6 @@ p.project-description {
   background-color: var(--secondaryBackground) !important;
   transition: all 0.3s ease-in-out !important;
 }
-.card-block:hover {
-  transform: scale(1.05, 1.05);
-  box-shadow: none;
-}
 
 /* Replicate similar borders found elsewhere on page */
 .project-border-top {
@@ -242,6 +230,15 @@ p.project-description {
   right: 10px;
 
   pointer-events: none;
+}
+
+/* Give me pink lines around everything or give me death */
+.image-link > p.pink-bracket {
+  color: var(--primaryColor);
+}
+/* Also need to make sure links aren't blue because it's 2022 */
+.image-link > p {
+  color: var(--primaryText);
 }
 
 /*------------------------- FORM -------------------------*/
