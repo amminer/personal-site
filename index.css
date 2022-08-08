@@ -154,6 +154,21 @@ a.project-link {
   max-width: fit-content;
 }
 
+/* Centers the final card for xxs screens (iPhone SE, for example) */
+@media screen and (max-width: 376px) {
+  div[class^='col-']:last-of-type {
+    padding-right: 0 !important;
+  }
+}
+/* Adds another breakpoint for final card centering between my xxs and B4's xs;
+ * this is equivalent padding to .pr-2
+ */
+@media screen and (min-width: 377px) and (max-width: 575px) {
+  div[class^='col-']:last-of-type {
+    padding-right: 0.25rem !important;
+  }
+}
+
 .project-link:after {
   content: URL('../images/externalLink.png');
   width: 20px;
