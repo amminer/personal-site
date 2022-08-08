@@ -38,6 +38,7 @@ The site should be accessible to most people regardless of disabilities - if you
 - [Bootstrap 4](https://getbootstrap.com/docs/4.2/getting-started/introduction/) - CSS framework
 - [EmailJS](https://www.emailjs.com/) - Free and simple contact-form-to-email API
 - [Digital Ocean](https://www.digitalocean.com/) - Free static site hosting and serving
+- [Favicon.io](https://favicon.io/) - Generate various sized favicons from a PNG
 - [StackOverflow](https://www.stackoverflow.com/) - Everything else
 
 ## ✍️ Authors <a name = "authors"></a>
