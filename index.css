@@ -252,9 +252,9 @@ p.project-description {
   border-top: 1px solid var(--primaryColor);
   position: absolute;
   height: 70%;
-  width: 93%;
+  width: 95%;
   top: 25px;
-  left: 3%;
+  left: 2.25%;
   pointer-events: none;
 }
 .form-border-bottom {
@@ -262,9 +262,9 @@ p.project-description {
   border-bottom: 1px solid var(--primaryColor);
   position: absolute;
   height: 70%;
-  width: 93%;
+  width: 95%;
   bottom: 25px;
-  right: 3%;
+  right: 2.25%;
   pointer-events: none;
 }
 
