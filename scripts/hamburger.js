@@ -5,26 +5,26 @@ $(document).click((event) => {
   }
 });
 
-// Credit to Eric Olson on SO for this solution to my navbar troubles
+// Code inspired by a similar solution at
 // https://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to
-function offsetAnchor() {
+// additionally takes window size into account
+function offsetJumpForNav() {
   if (
-    location.hash.length !== 0 &&
-    window.innerWidth >= 992 &&
-    window.innerWidth < 1650
+    location.hash.length > 0 && // catches page loads; redundant for click events
+    window.innerWidth >= 992 && // breakpts where nav is likely to cover titles
+    window.innerWidth < 1650 // see above ^
   ) {
-    window.scrollTo(window.scrollX, window.scrollY - 65);
+    window.scrollTo(window.scrollX, window.scrollY - 65); // hard coded offset for nav height
   }
 }
 
-// Captures click events of all <a> elements with href starting with #
+// for the whole document, if a click is on a link that jumps to a tag,
 $(document).on('click', 'a[href^="#"]', (event) => {
-  // Click events are captured before hash changes
-  // Timeout causes offsetAnchor to be called after jump
+  // Timeout waits until the jump is complete, then we call the offset function
   window.setTimeout(() => {
-    offsetAnchor();
+    offsetJumpForNav();
   }, 0);
 });
 
 // Set the offset when entering page with hash present in the url
-window.setTimeout(offsetAnchor, 0);
+window.setTimeout(offsetJumpForNav, 0);
