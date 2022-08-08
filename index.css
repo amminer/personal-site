@@ -161,7 +161,7 @@ a.project-link {
 /* fix scrolling row dimensions for various screen sizes */
 .flex-row.flex-nowrap {
   max-width: fit-content; /* centers on xxwide screens */
-  height: 320px; /* min height */
+  height: 445px; /* min height */
 }
 /* md */
 @media screen and (min-width: 768px) {
