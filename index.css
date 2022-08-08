@@ -187,6 +187,12 @@ div.col-12 {
   max-width: 500px !important;
   max-height: 620px !important;
 }
+/* fine-grain tweak for final card - title margin needs weird breakpoint */
+@media screen and (min-width: 395px) and (max-width: 767px) {
+  div.col-12 > div.card > h3.h5 {
+    margin-bottom: 0.5rem !important;
+  }
+}
 
 /* center project descriptions in their areas of the card */
 p.project-description {
