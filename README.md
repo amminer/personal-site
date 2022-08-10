@@ -53,3 +53,5 @@ The site should be accessible to most people regardless of disabilities - if you
   - [How to collapse a hamburger menu on mobile (Bootstrap Studio)](https://forum.bootstrapstudio.io/t/how-to-get-a-website-menu-to-collapse-after-selection-on-mobile/3792/6)
   - [How to force the body of a page to occupy the entire width on mobile (Stack Overflow)](https://stackoverflow.com/questions/30358630/html-body-not-filling-complete-width-on-mobile-devices)
   - [How to prevent the nav bar from covering page content on navigation (Stack Overflow)](https://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to)
+  
+- Template generated using thomascsd.vscode-readme-pattern for VS Code
