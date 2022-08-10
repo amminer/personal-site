@@ -8,7 +8,7 @@ $(document).click((event) => {
 function offsetJumpForNav() {
   if (
     window.innerWidth >= 992 && // breakpts where nav is likely to cover titles
-    window.innerWidth < 1650 // see above ^
+    window.innerWidth < 1350 // see above ^
   ) {
     window.scrollTo(window.scrollX, window.scrollY - 65); // nav height
   }
