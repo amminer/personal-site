@@ -33,6 +33,10 @@
   width: 90% !important;
 }
 
+.w-95 {
+  width: 95% !important;
+}
+
 body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2em;
@@ -47,7 +51,7 @@ body {
 }
 
 /* Secondary color thicker borders between sections */
-.section.border-bottom {
+.section-border-bottom.border-bottom {
   border-color: var(--secondaryColor) !important;
   border-bottom-width: 2px !important;
 }
