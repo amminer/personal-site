@@ -16,8 +16,14 @@ function formError(error) {
 }
 
 function formSuccess() {
-  console.log('SUCCESS!');
   window.alert('Your message was sent!');
+  formClear();
+}
+
+function formClear() {
+  document.getElementById('name').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('message').value = '';
 }
 
 function formValidate() {
