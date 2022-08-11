@@ -8,8 +8,8 @@
   --tertiaryBackground: #334;
   --primaryColor: #ff7393;
   --secondaryColor: #89befd;
-  --successColor: #4fc976;
-  --warningColor: #eab554;
+  --successColor: #69da9c;
+  --warningColor: #ddc77e;
 
   --headerHeight: 24px;
 }
@@ -277,17 +277,19 @@ p.project-description {
 }
 
 /* Color form buttons and give them hover animations */
-.btn-dark {
-  border-color: white !important;
+.border.form-btn {
+  color: var(--primaryText) !important;
+  background-color: var(--tertiaryBackground) !important;
+  border-color: var(--primaryColor) !important;
   transition: all 0.3s ease-in-out !important;
 }
-.btn-dark[type='submit']:hover {
-  background-color: var(--successColor);
-  color: var(--primaryBackground);
+.form-btn[type='submit']:hover {
+  background-color: var(--successColor) !important;
+  color: var(--primaryBackground) !important;
 }
-.btn-dark[type='reset']:hover {
-  background-color: var(--warningColor);
-  color: var(--primaryBackground);
+.form-btn[type='reset']:hover {
+  background-color: var(--warningColor) !important;
+  color: var(--primaryBackground) !important;
 }
 
 /*------------------------- FOOTER -------------------------*/

@@ -6,8 +6,8 @@ let darkSecondaryBackground = '#223';
 let darkTertiaryBackground = '#334';
 let darkPrimaryColor = '#ff7393';
 let darkSecondaryColor = '#89befd';
-let darkSuccessColor = '#4fc976';
-let darkWarningColor = '#eab554';
+let darkSuccessColor = '#69da9c';
+let darkWarningColor = '#ddc77e';
 
 // LIGHT:
 let lightPrimaryText = '#111';
