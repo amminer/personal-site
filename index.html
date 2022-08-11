@@ -30,7 +30,7 @@
 
   </head>
 
-  <body class="bg-dark text-light" id="body">
+  <body class="body" id="body">
 
     <!-- force body to fill vw on small screens -->
     <div class="no-overflow">
@@ -42,12 +42,12 @@
         id="navbar-header"
       >
         <button
-          class="navbar-toggler bg-dark border my-2 ml-2 mr-0"
+          class="navbar-toggler border my-2 ml-2 mr-0"
           data-toggle="collapse"
           data-target="#collapse-target"
           aria-label="toggle navbar menu"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon themed-icon"></span>
         </button>
         <div
           class="collapse navbar-collapse justify-content-end"
@@ -126,7 +126,7 @@
                 <img
                   src="../images/map.png"
                   alt="A stylized trifold map with a pin in it"
-                  class="img-fluid p-2 px-lg-5"
+                  class="img-fluid p-2 px-lg-5 themed-icon"
                 />
               </div>
               <div class="col-md container p-2 p-md-4">
@@ -153,7 +153,7 @@
                 <img
                   src="../images/tube.png"
                   alt="A test tube icon with bubbling fluid"
-                  class="img-fluid p-2 px-lg-5"
+                  class="img-fluid p-2 px-lg-5 themed-icon"
                 />
               </div>
               <div class="col-md container p-2 p-md-4">
@@ -182,7 +182,7 @@
                 <img
                   src="../images/tc.png"
                   alt="A stylized plant growing on a synthetic medium in a jar"
-                  class="img-fluid p-2 px-lg-5"
+                  class="img-fluid p-2 px-lg-5 themed-icon"
                 />
               </div>
               <div class="col-md container p-2 p-md-4">
@@ -426,8 +426,14 @@
             </p>
             <button
               type="button"
+              id="theme-btn"
+              class="mx-2 btn footer-btn rounded d-inline">
+              lights on
+            </button>
+            <button
+              type="button"
               id="info-btn"
-              class="mx-2 btn rounded-circle d-inline">
+              class="mx-2 btn footer-btn rounded-circle d-inline">
               i
             </button>
           </div>
@@ -444,6 +450,8 @@
       ></script>
       <!-- Info button popup (depends on JQuery) -->
       <script src="../scripts/infoButton.js" async defer></script>
+      <!-- Theme button (depends on JQuery) -->
+      <script src="../scripts/themes.js" async defer></script>
       <!-- collapse navbar on next click (depends on JQuery)-->
       <script src="../scripts/hamburger.js" async defer></script>
       <!-- Bootstrap dependency (?) -->
