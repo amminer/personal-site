@@ -6,7 +6,7 @@
   --primaryBackground: #112;
   --secondaryBackground: #223;
   --tertiaryBackground: #334;
-  --primaryColor: #ff7393;
+  --primaryColor: #e0728c;
   --secondaryColor: #89befd;
   --successColor: #69da9c;
   --warningColor: #ddc77e;
@@ -88,8 +88,22 @@ a.project-link {
 
 /*------------------------- NAVBAR -------------------------*/
 
+.navbar-nav.rounded {
+  background-color: var(--secondaryBackground);
+  width: fit-content;
+  float: right;
+}
+.nav-item.border {
+  background-color: var(--tertiaryBackground) !important;
+  border-color: var(--secondaryColor) !important;
+  margin: 4px 6px;
+  padding: 0px 6px;
+  width: fit-content;
+  float: right;
+  transition: all 0.3s ease-in-out;
+}
+
 /* Override bootstrap default colors and add transition details for card-like components */
-.nav-item.border,
 .navbar-toggler.border,
 .work-card,
 .card.card-block,
@@ -320,4 +334,5 @@ p.project-description {
 }
 .btn.footer-btn:active {
   background-color: var(--secondaryBackground);
+  color: #46959b;
 }
