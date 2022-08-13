@@ -90,7 +90,8 @@ a.project-link {
 
 .navbar-nav.rounded {
   background-color: var(--secondaryBackground);
-  width: fit-content;
+  border-color: var(--tertiaryBackground) !important;
+  width: max-content;
   float: right;
 }
 .nav-item.border {
@@ -99,8 +100,19 @@ a.project-link {
   margin: 4px 6px;
   padding: 0px 6px;
   width: fit-content;
-  float: right;
   transition: all 0.3s ease-in-out;
+}
+
+/* Need media query to right-align nav items in expanded menu without
+ * messing up left margin on first item for larger screens
+ */
+@media screen and (max-width: 992px) {
+  .nav-item.border {
+    margin-left: auto;
+  }
+  .navbar-nav.rounded {
+    padding-left: 0.65rem !important;
+  }
 }
 
 /* Override bootstrap default colors and add transition details for card-like components */
