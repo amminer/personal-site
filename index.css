@@ -102,6 +102,10 @@ a.project-link {
   width: fit-content;
   transition: all 0.3s ease-in-out;
 }
+.nav-item.border:hover,
+.navbar-toggler.border:hover {
+  border-color: var(--primaryColor) !important;
+}
 
 .nav-link {
   padding: 6px 8px !important;
@@ -127,9 +131,6 @@ a.project-link {
   background-color: var(--secondaryBackground) !important;
   border-color: var(--secondaryColor) !important;
   transition: all 0.3s ease-in-out;
-}
-.nav-item.border:hover {
-  background-color: var(--tertiaryBackground) !important;
 }
 
 /*------------------------- ABOUT ME -------------------------*/
