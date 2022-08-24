@@ -98,7 +98,6 @@ a.project-link {
   background-color: var(--tertiaryBackground) !important;
   border-color: var(--secondaryColor) !important;
   margin: 4px 6px;
-  padding: 0px 6px;
   width: fit-content;
   transition: all 0.3s ease-in-out;
 }
