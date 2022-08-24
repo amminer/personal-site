@@ -1,6 +1,6 @@
 ### TODO... improve this markdown. Also:
 
-- [ ] Address comments from final grade!
+- [x] Address comments from final grade!
 
 - [ ] (Migrate to Bootstrap 5)
 
