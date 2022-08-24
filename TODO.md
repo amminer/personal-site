@@ -1,6 +1,8 @@
 TODO... write this markdown. Also:
 
-- Add link to gradebook &  asgmt as an example of more recent code 
+- Address comments from final grade!
+
+- Add link to gradebook & asgmt as an example of more recent code
 
 - Make blue section borders flip to underline section headers on small screens?
 
