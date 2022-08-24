@@ -94,12 +94,17 @@ a.project-link {
   width: max-content;
   float: right;
 }
+
 .nav-item.border {
   background-color: var(--tertiaryBackground) !important;
   border-color: var(--secondaryColor) !important;
   margin: 4px 6px;
   width: fit-content;
   transition: all 0.3s ease-in-out;
+}
+
+.nav-link {
+  padding: 6px 8px !important;
 }
 
 /* Need media query to right-align nav items in expanded menu without
