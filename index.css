@@ -12,21 +12,22 @@
   --warningColor: #ddc77e;
 
   --headerHeight: 24px;
+  --hoverTime: 0.2s;
 }
 
 ::-webkit-scrollbar {
   width: 12px;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 ::-webkit-scrollbar-track {
   background-color: var(--secondaryBackground);
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: var(--tertiaryBackground);
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 
 .w-70 {
@@ -45,7 +46,7 @@ body {
   font-size: 1.2em;
   color: var(--primaryText) !important;
   background-color: var(--primaryBackground);
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 
 /* Prevents body width issues on small screens */
@@ -58,7 +59,7 @@ body {
 .section-border-bottom.border-bottom {
   border-color: var(--secondaryColor) !important;
   border-bottom-width: 2px !important;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 
 /* Primary color borders for certain text elements -
@@ -67,7 +68,7 @@ body {
 h3.border-pink,
 p.border-pink {
   border-color: var(--primaryColor) !important;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 
 /* Changes all link colors (non-nav links are indicated with an icon) */
@@ -100,7 +101,7 @@ a.project-link {
   border-color: var(--secondaryColor) !important;
   margin: 4px 6px;
   width: fit-content;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 .nav-item.border:hover,
 .navbar-toggler.border:hover {
@@ -130,7 +131,7 @@ a.project-link {
 .jumbotron-fluid {
   background-color: var(--secondaryBackground) !important;
   border-color: var(--secondaryColor) !important;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 
 /*------------------------- ABOUT ME -------------------------*/
@@ -154,7 +155,7 @@ a.project-link {
   top: 1px;
   left: 0px;
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 .bio-border-bottom {
   border-right: 1px solid var(--primaryColor);
@@ -165,7 +166,7 @@ a.project-link {
   bottom: -3px;
   right: 0px;
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 /* adjust for when second paragraph is not displayed */
 @media screen and (min-width: 576px) {
@@ -257,7 +258,7 @@ p.project-description {
   left: 10px;
 
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 .project-border-bottom {
   border-right: 1px solid var(--primaryColor);
@@ -269,7 +270,7 @@ p.project-description {
   right: 10px;
 
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 
 /*------------------------- FORM -------------------------*/
@@ -296,7 +297,7 @@ p.project-description {
   top: 25px;
   left: 2.25%;
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 .form-border-bottom {
   border-right: 1px solid var(--primaryColor);
@@ -307,7 +308,7 @@ p.project-description {
   bottom: 25px;
   right: 2.25%;
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 
 /* Color form buttons and give them hover animations */
@@ -315,7 +316,7 @@ p.project-description {
   color: var(--primaryText) !important;
   background-color: var(--tertiaryBackground) !important;
   border-color: var(--primaryColor) !important;
-  transition: all 0.3s ease-in-out !important;
+  transition: all var(--hoverTime) ease-in-out !important;
 }
 .form-btn[type='submit']:hover {
   background-color: var(--successColor) !important;
@@ -335,7 +336,7 @@ p.project-description {
   height: 40px;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 
 .btn#theme-btn {
@@ -343,7 +344,7 @@ p.project-description {
   background-color: var(--tertiaryBackground);
   height: 40px;
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--hoverTime) ease-in-out;
 }
 
 .btn.footer-btn:hover {
