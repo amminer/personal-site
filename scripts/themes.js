@@ -67,5 +67,5 @@ function toggleTheme() {
   }
 }
 
-let themeBtn = $(document.getElementById('theme-btn'));
+let themeBtn = $('#theme-btn');
 themeBtn.click(toggleTheme);
