@@ -12,8 +12,8 @@ let darkWarningColor = '#ddc77e';
 // LIGHT:
 let lightPrimaryText = '#111';
 let lightSecondaryText = '#222';
-let lightPrimaryBackground = '#fffffa';
-let lightSecondaryBackground = '#ddd5d5';
+let lightPrimaryBackground = '#ddd2d5';
+let lightSecondaryBackground = '#faf0fa';
 let lightTertiaryBackground = '#dfc9c9';
 let lightPrimaryColor = '#c0526c';
 let lightSecondaryColor = '#5f9284';
