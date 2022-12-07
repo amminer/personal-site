@@ -65,6 +65,8 @@ function toggleTheme() {
   } else {
     themeBtn.textContent = 'lights off';
   }
+  // https://stackoverflow.com/questions/4210798/how-to-scroll-to-top-of-page-with-javascript-jquery
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 
 let themeBtn = $('#theme-btn');
