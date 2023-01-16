@@ -273,6 +273,18 @@ p.project-description {
   transition: all var(--hoverTime) ease-in-out;
 }
 
+/* bootstrap has no d-lg-listitem class */
+#hidden-future-project {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #hidden-future-project {
+    display: list-item;
+    list-style-type: disc;
+  }
+}
+
 /*------------------------- FORM -------------------------*/
 
 /* give form background color and fix max width to prevent awkward proportions */
