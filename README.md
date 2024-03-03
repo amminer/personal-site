@@ -28,7 +28,7 @@ The site is rebuilt and deployed automatically for each push to the main branch.
 
 ## 🏁 Prerequisites <a name = "prereqs"></a>
 
-All you need is a relatively modern browser and an internet connection. The site is designed to respond fluidly to changes in screen size and should be usable and pleasant to look at for any reasonable resolution or aspect ratio, though some niche devices may not have been taken into consideration. The site is viewable at https://seahorse-app-989ub.ondigitalocean.app/ for the time being, but it will eventually get its own domain name.
+All you need is a relatively modern browser and an internet connection. The site is designed to respond fluidly to changes in screen size and should be usable and pleasant to look at for any reasonable resolution or aspect ratio, though some niche devices may not have been taken into consideration. The site is viewable at https://ameliais.online/.
 
 The site should be accessible to most people regardless of disabilities - if you're not able to easily navigate the site then I've missed something and it would be hugely appreciated if you could reach out to me via Github and/or create an issue on the project's repository.
 
