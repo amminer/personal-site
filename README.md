@@ -1,8 +1,3 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="./images/amelia_asciified.png" alt="Image of the author as processed by Asciifier, one of the projects showcased within this project"></a>
-</p>
-
 <h3 align="center">Personal Site</h3>
 <h5 align="center">For CS510 - Intro to Web Development, Summer 2022</h5>
 
@@ -16,7 +11,7 @@
 
 - [About](#about)
 - [Prerequisites](#prereqs)
-- [Built Using](#built-using)
+- [Built Using](#built_using)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
