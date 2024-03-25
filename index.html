@@ -109,7 +109,7 @@
           <div>
             <a href="https://github.com/amminer" target="_blank" class="img-link">
             <img
-              src="../images/amelia.png"
+              src="../images/amelia.jpg"
               alt="Amelia resting on a bench with her bicycle"
               class="img-fluid rounded-circle mx-auto mb-2"
               id="selfie"
@@ -261,8 +261,40 @@
           </h2>
           <div class="container-fluid px-0">
             <div class="mx-auto overflow-auto row flex-row flex-nowrap mt-2 pb-4 pt-3">
-              
+
               <div class="col-5 ml-lg-3">
+                <div class="card card-block rounded border-0 h-100 p-4">
+                  <div class="project-border-top"></div>
+                  <div class="project-border-bottom"></div>
+                  <h3 class="h4 mb-0 text-center">
+                    <a href="https://github.com/amminer/ansifier"
+                      target="_blank"
+                      class="project-link">
+                      ansifier
+                    </a>
+                  </h3>
+                  <a href="../images/asciifier_opaque.png" target="_blank" class="mx-auto">
+                    <img
+                    class="img-fluid rounded project-img mx-auto"
+                    alt="A screenshot of an image of a vintage computer, overlaid with the output
+                    of ansifier on that image, a grid of about 80x55 colored octothorpes."
+                    src="../images/asciifier.png"
+                    />
+                  </a>
+                  <p class="project-description my-lg-1">
+                    A Python package that represents images as text. Try it out!
+                  </p>
+                  <code class="project-description my-lg-1">pip install ansifier<br/>
+                    python -m ansifier -h</code>
+                  <p class="project-description d-none d-lg-block">
+                    By default it determines what character to use based on
+                    transparency and fits its output to the terminal it runs in,
+                    but it accepts a ton of arguments.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="col-5">
                 <div class="card card-block rounded border-0 h-100 p-4">
                   <div class="project-border-top"></div>
                   <div class="project-border-bottom"></div>
@@ -322,38 +354,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-5">
-                <div class="card card-block rounded border-0 h-100 p-4">
-                  <div class="project-border-top"></div>
-                  <div class="project-border-bottom"></div>
-                  <h3 class="h4 mb-0 text-center">
-                    <a href="https://github.com/amminer/asciifier"
-                      target="_blank"
-                      class="project-link">
-                      Asciifier
-                    </a>
-                  </h3>
-                  <a href="../images/asciifier_opaque.png" target="_blank" class="mx-auto">
-                    <img
-                    class="img-fluid rounded project-img mx-auto"
-                    alt="A screenshot of an image of a vintage computer, overlaid with the output
-                    of asciifier on that image, a grid of about 80x55 colored octothorpes."
-                    src="../images/asciifier.png"
-                    />
-                  </a>
-                  <p class="project-description my-lg-1">
-                    A Python script that creates text representations of images
-                    in the terminal using ansi escapes.
-                  </p>
-                  <p class="project-description d-none d-lg-block">
-                    By default it determines what character to use based on
-                    transparency and fits its output to the terminal it runs in,
-                    but it accepts an ever-growing array of options making it
-                    deceptively powerful for such a little script.
-                    I have big plans for this one!
-                  </p>
-                </div>
-              </div>
+
               <div class="col-5 pr-3 pr-lg-4">
                 <div class="card card-block rounded border-0 h-100 p-4">
                   <div class="project-border-top"></div>
@@ -387,6 +388,7 @@
                   </p>
                 </div>
               </div>
+
               <!--
               <div class="col-12 col-md-8 text-wrap pr-3 pr-lg-4">
                 <div class="card card-block rounded border-0 h-100 p-4">
@@ -415,7 +417,7 @@
                     <li id="hidden-future-project">
                       <h4 class="h5 mb-0 mb-md-2">PhotoTextifi.er</h4>
                       <p class="small mb-0">
-                        Makes ascii art from images.
+                        Makes ansi art from images.
                       </p>
                       <p class="small mb-0 d-none d-lg-block">
                         I've already written (most of) a python program to do this -
