@@ -16,55 +16,75 @@
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    
-    <!-- JS IMPORTS -->
-      
-      <!-- JQuery -->
-      <script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"
-        defer
-      ></script>
-      <!-- Info button popup (depends on JQuery) -->
-      <script src="./scripts/infoButton.js" defer></script>
-      <!-- Theme button (depends on JQuery) -->
-      <script src="./scripts/themes.js" defer></script>
-      <!-- collapse navbar on next click (depends on JQuery)-->
-      <script src="./scripts/hamburger.js" defer></script>
-      <!-- Bootstrap dependency (?) -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"
-        defer
-      ></script>
-      <!-- Bootstrap -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"
-        defer
-      ></script>
-      <!-- Contact form submit function (via EmailJS API) -->
-      <script
-        type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer> 
-      </script>
-      <script type="text/javascript" src="../scripts/contactForm.js" defer></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
 
+    <!-- JS IMPORTS -->
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="./bash-default.css" />
+    <script src="./scripts/bash.min.js"></script>
+
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Info button popup (depends on JQuery) -->
+    <script src="./scripts/infoButton.js" defer></script>
+    <!-- Theme button (depends on JQuery) -->
+    <script src="./scripts/themes.js" defer></script>
+    <!-- collapse navbar on next click (depends on JQuery)-->
+    <script src="./scripts/hamburger.js" defer></script>
+    <!-- Bootstrap dependency (?) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Contact form submit function (via EmailJS API) -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="../scripts/contactForm.js"
+      defer
+    ></script>
   </head>
 
   <body class="body" id="body">
-
     <!-- force body to fill vw on small screens -->
     <div class="no-overflow">
-  
-<!-- NAVBAR -->
+      <!-- NAVBAR -->
 
       <nav
         class="navbar navbar-dark navbar-expand-lg justify-content-end position-fixed fixed-top"
@@ -99,7 +119,7 @@
         </div>
       </nav>
 
-<!-- ABOUT ME SECTION -->
+      <!-- ABOUT ME SECTION -->
 
       <main class="d-flex flex-column mx-0">
         <section
@@ -107,13 +127,17 @@
           class="jumbotron-fluid w-90 mt-4 mb-3 mb-sm-0 mx-auto px-4 py-3 rounded section"
         >
           <div>
-            <a href="https://github.com/amminer" target="_blank" class="img-link">
-            <img
-              src="../images/bice.jpg"
-              alt="Amelia riding her bike, smiling at the camera"
-              class="img-fluid rounded-circle mx-auto mb-2"
-              id="selfie"
-            />
+            <a
+              href="https://github.com/amminer"
+              target="_blank"
+              class="img-link"
+            >
+              <img
+                src="../images/bice.jpg"
+                alt="Amelia riding her bike, smiling at the camera"
+                class="img-fluid rounded-circle mx-auto mb-2"
+                id="selfie"
+              />
             </a>
             <h1 class="d-inline-block align-middle mx-2">
               Hi,<br class="d-inline d-md-none" />
@@ -123,38 +147,48 @@
           <div class="position-relative">
             <div class="bio-border-left"></div>
             <p class="mt-2 mb-0 px-3 py-2 border-top border-pink">
-            I'm a M.S. Computer Science student at Portland State University's Maseeh
-            College of Engineering and Computer Science. My undergraduate degree is
-            a B.S. Biology from the University of Central Florida.
-            My professional experience is mostly spread between technical roles in
-            biochemistry and environmental engineering settings, mainly involving
-            data collection, processing, and analysis, automation across a wide
-            variety of workflows, research design and implementation,
-            and project management. <br /> <br />
-            Beginning in May of 2023 and ending in June
-            of 2024, over the final year of my M.S. program, I have had the pleasure
-            of working as a Software Development Engineer in Test (SDET) Student Intern
-            at BlackBerry Cylance - more on that below.
+              I'm a bright-eyed, bushy-tailed nerd with a M.S. in Computer
+              Science from Portland State University's Maseeh College of
+              Engineering and Computer Science (4.0 GPA) and a special interest
+              in cybersecurity. My undergraduate degree is a B.S. Biology from
+              the University of Central Florida. Beginning in May of 2023 and
+              ending in August of 2024, over the final year of my M.S. program
+              and the following Summer, I had the pleasure of working as a
+              Software Development Engineer in Test (SDET) Student Intern at
+              BlackBerry/Cylance - more on that below.
+              <br />
+              <br />
+              Outside of my time at BlackBerry, my professional experience is
+              mostly spread between technical roles in biochemistry and
+              environmental engineering settings, with a focus on data
+              collection, processing, and analysis, as well as workflow
+              automation and research design and implementation.
             </p>
             <div class="bio-border-bottom d-sm-none"></div>
-          <p class="d-none d-sm-block px-3 py-2 border-bottom border-right border-pink">
-            I'm interested in using computers to better humanity, especially by bridging the
-            gaps between people as well as between us and the rest of the
-            natural world.
-            I believe software is a uniquely powerful and flexible tool, opening
-            doors to experiences people would otherwise be unable to have.
-            Responsible and effective software engineering helps everyone to
-            better understand one another and facilitates
-            easier, more comfortable living for everyone.
-          </p>
+            <p
+              class="d-none d-sm-block px-3 py-2 border-bottom border-right border-pink"
+            >
+              I'm interested in using computers to better humanity, especially
+              by bridging the gaps between people as well as between us and the
+              rest of the natural world. I believe software is a uniquely
+              powerful and flexible tool, opening doors to experiences people
+              would otherwise be unable to have. Responsible and effective
+              software engineering helps everyone to better understand one
+              another and facilitates easier, more comfortable living for
+              everyone.
+            </p>
           </div>
         </section>
-        <div class="mx-auto section-border-bottom border-bottom w-95 mt-1 mt-sm-3 mt-md-4"></div>
+        <div
+          class="mx-auto section-border-bottom border-bottom w-95 mt-1 mt-sm-3 mt-md-4"
+        ></div>
 
-<!-- PREVIOUS WORK SECTION -->
+        <!-- PREVIOUS WORK SECTION -->
 
         <section id="PreviousWork" class="text-left pb-2 section">
-          <h2 class="text-xl-center text-left my-3 mx-2 mx-md-3 mx-lg-4 mx-xl-5 w-70">
+          <h2
+            class="text-xl-center text-left my-3 mx-2 mx-md-3 mx-lg-4 mx-xl-5 w-70"
+          >
             Some of my previous work includes...
           </h2>
           <div class="bootstrap-grid container">
@@ -172,20 +206,21 @@
                 >
                   Software Test Automation
                 </h3>
-                <p
-                  class="pb-2 px-2 border-bottom border-right border-pink"
-                >
-                At BlackBerry Cylance, I work with a team of talented
-                software engineers to maintain, enhance, and extend a robust
-                test automation suite, as well as its associated framework,
-                for the company's Endpoint Detection and Response product.
-                I find the work to be incredibly challenging and rewarding,
-                and I continue to grow immensely as a software professional
-                (and as a person in general) as a result of working in this
-                complex environment with these wonderful people. <br />
-                As a result of my exceptional performance in this role, my original
-                8-month internship was extended to cover the remainder of my
-                time as a student in PSU's M.S. Computer Science program.
+                <p class="pb-2 px-2 border-bottom border-right border-pink">
+                  At BlackBerry/Cylance, I worked with a team of talented
+                  software engineers to maintain, enhance, and extend a robust
+                  test automation suite, as well as its associated custom
+                  in-house framework, for the company's Endpoint Detection and
+                  Response product. I found the work to be incredibly
+                  challenging and rewarding, and I grew immensely as a software
+                  professional (and as a person in general) as a result of
+                  working in this complex environment with these wonderful
+                  people. <br />
+                  Unfortunately, BlackBerry was not able to bring me on
+                  full-time, so I'm currently seeking a more-or-less similar
+                  role in development or software QA automation. Several letters
+                  of recommendation from my former colleagues are available upon
+                  request - holler at me!
                 </p>
               </div>
             </div>
@@ -204,19 +239,18 @@
                 >
                   Clinical Testing
                 </h3>
-                <p
-                  class="pb-2 px-2 border-bottom border-right border-pink"
-                >
-                  With HIPAA always in focus, clinical laboratory work allowed me
-                  to cut my teeth on programming and automation work in highly
-                  regulated environments. Additionally, the experiences I've
-                  had in clinical labs has sharpened my patience and discipline.
-                  I got practical experience working with sensitive data in a way
-                  that not only respected regulatory and ethical concerns, but made
-                  them easier to meet. Good informatics workstation programs and
-                  automation tools take cognitive load off employees and ultimately
-                  enhance the experiences of the lab's customers, technicians,
-                  and management all at once. <br />
+                <p class="pb-2 px-2 border-bottom border-right border-pink">
+                  With HIPAA always in focus, clinical laboratory work allowed
+                  me to cut my teeth on programming and automation work in
+                  highly regulated environments. Additionally, the experiences
+                  I've had in clinical labs have sharpened my patience and
+                  discipline. I got practical experience working with sensitive
+                  data in a way that not only respected regulatory and ethical
+                  concerns, but made them easier to meet. Good informatics
+                  workstation programs and automation tools take cognitive load
+                  off employees and ultimately enhance the experiences of the
+                  lab's customers, technicians, and management all at once.
+                  <br />
                 </p>
               </div>
             </div>
@@ -235,57 +269,71 @@
                 >
                   Plant Tissue Culture
                 </h3>
-                <p
-                  class="pb-2 px-2 border-bottom border-right border-pink"
-                >
+                <p class="pb-2 px-2 border-bottom border-right border-pink">
                   In my role as a tissue culture technician I had the
                   opportunity to lead the digitization of an existing
                   pen-and-paper stock management system, which was valuable
-                  experience in more ways than I can enumerate here.
-                  Working directly with the company's owner and the other
-                  technicians to set up a system that made sense for everyone
-                  as individuals and as a team was both challenging and satisfying.
+                  experience in more ways than I can enumerate here. Working
+                  directly with the company's owner and the other technicians to
+                  set up a system that made sense for everyone as individuals
+                  and as a team was both challenging and satisfying.
                 </p>
               </div>
             </div>
           </div>
-          <div class="mx-auto section-border-bottom border-bottom w-95 mt-1 mt-sm-3 mt-md-4"></div>
+          <div
+            class="mx-auto section-border-bottom border-bottom w-95 mt-1 mt-sm-3 mt-md-4"
+          ></div>
         </section>
 
-<!-- PROJECTS SECTION -->
+        <!-- PROJECTS SECTION -->
 
         <section id="Projects" class="pb-2 section">
           <h2
-            class="text-xl-center text-left mb-0 pb-0 mt-3 mx-2 mx-md-3 mx-lg-4 mx-xl-5 w-70">
-            Some projects I've taken on...
+            class="text-xl-center text-left mb-0 pb-0 mt-3 mx-2 mx-md-3 mx-lg-4 mx-xl-5 w-70"
+          >
+            Some personal projects...
           </h2>
           <div class="container-fluid px-0">
-            <div class="mx-auto overflow-auto row flex-row flex-nowrap mt-2 pb-4 pt-3">
-
+            <div
+              class="mx-auto overflow-auto row flex-row flex-nowrap mt-2 pb-4 pt-3"
+            >
               <div class="col-5 ml-lg-3">
                 <div class="card card-block rounded border-0 h-100 p-4">
                   <div class="project-border-top"></div>
                   <div class="project-border-bottom"></div>
                   <h3 class="h4 mb-0 text-center">
-                    <a href="https://github.com/amminer/ansifier"
+                    <a
+                      href="https://github.com/amminer/ansifier"
                       target="_blank"
-                      class="project-link">
+                      class="project-link"
+                    >
                       ansifier
                     </a>
                   </h3>
-                  <a href="../images/asciifier_opaque.png" target="_blank" class="mx-auto">
+                  <a
+                    href="../images/asciifier_opaque.png"
+                    target="_blank"
+                    class="mx-auto"
+                  >
                     <img
-                    class="img-fluid rounded project-img mx-auto"
-                    alt="A screenshot of an image of a vintage computer, overlaid with the output
+                      class="img-fluid rounded project-img mx-auto"
+                      alt="A screenshot of an image of a vintage computer, overlaid with the output
                     of ansifier on that image, a grid of about 80x55 colored octothorpes."
-                    src="../images/asciifier.png"
+                      src="../images/asciifier.png"
                     />
                   </a>
                   <p class="project-description my-lg-1">
                     A Python package that represents images as text. Try it out!
                   </p>
-                  <code class="project-description my-lg-1">pip install ansifier<br/>
-                    python -m ansifier -h</code>
+                  <code class="project-description my-lg-1 language-bash">
+                    pip install ansifier<br />
+                    ansifier -h<br />
+                  </code>
+                  or, if python's Scripts aren't on PATH,
+                  <code class="project-description my-lg-1 language-bash">
+                    python -m ansifier -h
+                  </code>
                   <p class="project-description d-none d-lg-block">
                     By default it determines what character to use based on
                     transparency and fits its output to the terminal it runs in,
@@ -293,7 +341,7 @@
                   </p>
                 </div>
               </div>
-              
+
               <div class="col-5">
                 <div class="card card-block rounded border-0 h-100 p-4">
                   <div class="project-border-top"></div>
@@ -302,23 +350,32 @@
                     <a
                       href="https://github.com/cs594-spring-2023-project/594irc"
                       target="_blank"
-                      class="project-link">
+                      class="project-link"
+                    >
                       IRC
                     </a>
                   </h3>
-                  <a href="../images/irc_opaque.png" target="_blank" class="mx-auto">
+                  <a
+                    href="../images/irc_opaque.png"
+                    target="_blank"
+                    class="mx-auto"
+                  >
                     <img
-                    class="img-fluid rounded project-img mx-auto mt-md-3 mt-lg-1"
-                    alt="A screenshot of an IRC server and 2 clients running in 3 terminals windows"
-                    src="../images/irc.png"
+                      class="img-fluid rounded project-img mx-auto mt-md-3 mt-lg-1"
+                      alt="A screenshot of an IRC server and 2 clients running in 3 terminals windows"
+                      src="../images/irc.png"
                     />
                   </a>
                   <p class="project-description mb-lg-2 my-lg-1">
-                    A simple Internet Relay Chat protocol with an IETF-style RFC and a Python implementation.
+                    A simple Internet Relay Chat protocol with an IETF-style RFC
+                    and a Python implementation.
                   </p>
                   <p class="project-description d-none d-lg-block">
-                    This was a pair project for Internetworking Protocols at Portland State University. The language-agnostic RFC was a
-                    collaborative effort, and I was responsible for implementing the server and the packet classes used by both the server and client.
+                    This was a pair project for Internetworking Protocols at
+                    Portland State University. The language-agnostic RFC was a
+                    collaborative effort, and I was responsible for implementing
+                    the server and the packet classes used by both the server
+                    and client.
                   </p>
                 </div>
               </div>
@@ -331,16 +388,21 @@
                     <a
                       href="https://github.com/amminer/lightlapse"
                       target="_blank"
-                      class="project-link">
+                      class="project-link"
+                    >
                       Lightlapse
                     </a>
                   </h3>
-                  <a href="../images/lightlapse_opaque.png" target="_blank" class="mx-auto">
+                  <a
+                    href="../images/lightlapse_opaque.png"
+                    target="_blank"
+                    class="mx-auto"
+                  >
                     <img
-                    class="img-fluid rounded project-img mx-auto mt-md-3 mt-lg-1"
-                    alt="A screenshot of lightlapse running, with a
+                      class="img-fluid rounded project-img mx-auto mt-md-3 mt-lg-1"
+                      alt="A screenshot of lightlapse running, with a
                          simple GUI for managing its functions"
-                    src="../images/lightlapse.png"
+                      src="../images/lightlapse.png"
                     />
                   </a>
                   <p class="project-description mb-lg-2 my-lg-1">
@@ -348,9 +410,10 @@
                     environmental conditions for photosynthetic organisms.
                   </p>
                   <p class="project-description d-none d-lg-block">
-                    I wrote this while beginning to teach myself Python/programming, GNU/Linux,
-                    and electronics. Eventually, I want to extend it to water & feed using
-                    gravity and solenoids, manage multiple light/watering zones, etc.
+                    I wrote this while beginning to teach myself
+                    Python/programming, GNU/Linux, and electronics. Eventually,
+                    I want to extend it to water & feed using gravity and
+                    solenoids, manage multiple light/watering zones, etc.
                   </p>
                 </div>
               </div>
@@ -363,28 +426,33 @@
                     <a
                       href="https://github.com/amminer/animal-racing-simulator"
                       target="_blank"
-                      class="project-link">
+                      class="project-link"
+                    >
                       Animal Racing Simulator
                     </a>
                   </h3>
                   <a
                     href="../images/animalRacingSimulator_opaque.png"
                     target="_blank"
-                    class="mx-auto">
+                    class="mx-auto"
+                  >
                     <img
                       class="img-fluid rounded project-img mx-auto"
                       alt="A screenshot of Animal Racing Simulator running in the terminal,
                            showing the main menu and a list of animals that are about to race"
-                      src="../images/animalRacingSimulator.png"/>
+                      src="../images/animalRacingSimulator.png"
+                    />
                   </a>
                   <p class="project-description my-lg-1">
-                    A C++ game I wrote for CS202 but with a twist - 
-                    watch out for predator-prey interactions!
+                    A C++ game I wrote for CS202 but with a twist - watch out
+                    for predator-prey interactions!
                   </p>
                   <p class="project-description d-none d-lg-block">
-                    I want to eventually add a mode where players earn winnings to buy and breed new
-                    animals with commensurate stats... Animal Racing Tycoon, anyone? <br/>
-                    Make sure to check out the other projects I completed for this class - see the readme on GitHub.
+                    I want to eventually add a mode where players earn winnings
+                    to buy and breed new animals with commensurate stats...
+                    Animal Racing Tycoon, anyone? <br />
+                    Make sure to check out the other projects I completed for
+                    this class - see the readme on GitHub.
                   </p>
                 </div>
               </div>
@@ -432,32 +500,47 @@
               -->
             </div>
           </div>
-          <div class="mx-auto section-border-bottom border-bottom w-95 mt-1 mt-sm-3 mt-md-4"></div>
+          <div
+            class="mx-auto section-border-bottom border-bottom w-95 mt-1 mt-sm-3 mt-md-4"
+          ></div>
         </section>
 
-<!-- FORM SECTION -->
+        <!-- FORM SECTION -->
 
         <section id="Contact" class="pb-3 section">
-          <h2 class="text-xl-center text-left my-3 mx-2 mx-md-3 mx-lg-4 mx-xl-5 w-70">
+          <h2
+            class="text-xl-center text-left my-3 mx-2 mx-md-3 mx-lg-4 mx-xl-5 w-70"
+          >
             Reach out!
           </h2>
 
           <form
             id="contact-form"
-            class="form container position-relative rounded mx-auto py-4 px-5">
+            class="form container position-relative rounded mx-auto py-4 px-5"
+          >
             <div class="form-border-top"></div>
             <div class="form-border-bottom"></div>
             <div class="form-group row mt-sm-3">
               <label for="name" class="col-form-label col-sm-2">Name: </label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" name="user_name"/>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="user_name"
+                />
               </div>
             </div>
 
             <div class="form-group row mt-sm-3">
               <label for="email" class="col-form-label col-sm-2">Email: </label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" name="user_email"/>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="user_email"
+                />
               </div>
             </div>
 
@@ -475,42 +558,49 @@
               </div>
             </div>
 
-            <div class="form-group w-50 mx-auto btn-container d-flex justify-content-around">
+            <div
+              class="form-group w-50 mx-auto btn-container d-flex justify-content-around"
+            >
               <input
                 type="submit"
                 name="submit"
                 title="submit"
                 value="submit"
-                class="d-inline btn form-btn rounded border px-4 py-2 mx-4"/>
+                class="d-inline btn form-btn rounded border px-4 py-2 mx-4"
+              />
               <input
                 type="reset"
                 name="reset"
                 title="reset"
                 value="reset"
-                class="d-inline btn form-btn rounded border px-4 py-2 mx-4"/>
+                class="d-inline btn form-btn rounded border px-4 py-2 mx-4"
+              />
             </div>
           </form>
-          <div class="mx-auto section-border-bottom border-bottom w-95 mt-1 mt-sm-3 mt-md-4"></div>
+          <div
+            class="mx-auto section-border-bottom border-bottom w-95 mt-1 mt-sm-3 mt-md-4"
+          ></div>
         </section>
-        
-<!-- FOOTER -->
+
+        <!-- FOOTER -->
 
         <section id="footer" class="py-3">
           <div class="d-flex align-content-center justify-content-center">
-            <p
-              class="small text-center align-self-center mx-2 my-0">
+            <p class="small text-center align-self-center mx-2 my-0">
               Thanks for stopping by!
             </p>
             <button
               type="button"
               id="theme-btn"
-              class="mx-2 btn footer-btn rounded d-inline">
+              class="mx-2 btn footer-btn rounded d-inline"
+            >
               lights on
             </button>
             <button
               type="button"
               id="info-btn"
-              class="mx-2 btn footer-btn rounded-circle d-inline">
+              class="mx-2 btn footer-btn rounded-circle d-inline"
+            >
               i
             </button>
           </div>
