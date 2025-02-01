@@ -471,7 +471,7 @@ p.project-description {
 
   #post_container {
     grid-area: 1 / 2 / span 1 / span 1;
-    padding-left: min(25%, 400px);
+    padding-left: 256px;
     margin-top: 0px;
 	font-size: 1.2em;
   }
