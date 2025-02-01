@@ -1,0 +1,7 @@
+Test Blog Post Title
+images/bice.jpg
+This is a test blog post. I intend to use the first line as the title, the second line as a filename
+for an image if any, and the rest of the file as the post content. I hope that raw HTML can be
+included in the post content to make things potentially very spicy. Let's see if it works.
+
+<br/><br/><span style="color: red;">It really is just HTML in here!</span>

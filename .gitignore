@@ -1,2 +1,4 @@
 .vscode
 *.xcf
+__pycache__
+blog.html

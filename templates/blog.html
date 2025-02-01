@@ -1,0 +1,36 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Amelia's Blog</title>
+		<meta
+		  name="description"
+		  content="Amelia Miner's blog"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	    <link rel="stylesheet" href="index.css" />
+	</head>
+
+	<body id="blog_body">
+		<!--
+		|````````````````````````|
+		|*~ |  ~~~~~~~~   [```]  |
+		|*~ |  `  `` `    [___]  |
+		|*~ |   -------------    |
+		|*~ |  --------------    |
+		|*~ |  ---------         |
+		|*~ |   -------------    |
+		|*~ |  --------------    |
+		``````````````````````````
+        TODO make sidebar collapsible-->
+        <div id="sidebar">
+            <a id="home_link" class="sidebar_item" href="/index.html"> ← ⌂ </a>
+            {{ post_list_items }}
+        </div>
+        <div id="post_container">
+            {{ post_container_items }}
+        </div>
+	</body>
+
+</html>
