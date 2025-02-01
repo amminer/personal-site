@@ -5,3 +5,4 @@ for an image if any, and the rest of the file as the post content. I hope that r
 included in the post content to make things potentially very spicy. Let's see if it works.
 
 <br/><br/><span style="color: red;">It really is just HTML in here!</span>
+ WAOWWWW

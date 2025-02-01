@@ -9,7 +9,48 @@
 		  content="Amelia Miner's blog"
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-	    <link rel="stylesheet" href="index.css" />
+	  <link rel="stylesheet" href="index.css" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- sidebar expander (depends on JQuery) -->
+    <script src="./scripts/sidebar_expander.js" defer></script>
+    <!-- other stuff -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
 	</head>
 
 	<body id="blog_body">
@@ -28,6 +69,9 @@
             <a id="home_link" class="sidebar_item" href="/index.html"> ← ⌂ </a>
             {{ post_list_items }}
         </div>
+        <span id="sidebar_expander" class="navbar-toggler-icon themed-icon">
+          <button id="expand_sidebar_button"></button>
+        </span>
         <div id="post_container">
             {{ post_container_items }}
         </div>

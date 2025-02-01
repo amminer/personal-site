@@ -34,16 +34,16 @@ for i, blog_post in enumerate(blog_posts):
     one_indexed = i + 1
 
     post_list_items.append(f'''
-<btn id="post_link_{one_indexed}" class="sidebar_item">
-• {blog_post.get("title")}
-<p style="margin: 0px 14px; font-size: 0.75em;">📅 {blog_post.get("date")}</p>
-</btn>''')
+            <a id="post_link_{one_indexed}" class="sidebar_item nav-link" href="#blog_post_{one_indexed}">
+            • {blog_post.get("title")}
+            <p style="margin: 0px 14px; font-size: 0.75em;">📅 {blog_post.get("date")}</p>
+            </a>''')
 
     post_container_items.append(f'''<div class="blog_post" id="blog_post_{one_indexed}">
-<h1> {blog_post.get("title")} </h1>
-<img src="{blog_post.get("imagepath")}"/>
-<p> {blog_post.get("post_content")} </p>
-</div>''')
+        <h1> {blog_post.get("title")} </h1>
+          <img src="{blog_post.get("imagepath")}"/>
+          <p> {blog_post.get("post_content")} </p>
+    </div>''')
 
 # insert blog list and post contents into template page
 # notable that newer blog posts are below older ones in the HTML,
