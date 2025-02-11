@@ -20,7 +20,6 @@ from typing import Dict
 BLOG_SRC_DIR = "blog_src/"
 BLOG_POSTS_DIR = "blog/"
 BLOG_TEMPLATE_FILEPATH = "templates/blog.html"
-BLOG_OUTPUT_FILEPATH = "blog.html"
 
 
 # read blog post data from src
@@ -78,5 +77,5 @@ blog_home_rendered_html = template.render(
 )
 
 # write rendered homepage to blog.html
-with open(BLOG_OUTPUT_FILEPATH, "w") as output_file:
+with open(os.path.join(BLOG_POSTS_DIR, "index.html"), "w") as output_file:
     _ = output_file.write(blog_home_rendered_html)
