@@ -43,7 +43,7 @@
 
 #homepage_body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.2em;
+  font-size: 1em;
   color: var(--primaryText) !important;
   background-color: var(--primaryBackground);
   transition: all var(--hoverTime) ease-in-out;
