@@ -408,26 +408,27 @@ p.project-description {
 }
 
 .sidebar_item {
-    margin-top: 10px;
     padding: 0px !important;
     color: var(--primaryText);
     text-decoration: none;
+    margin-bottom: 8px;
 }
 
 #post_container {
   margin: 20px;
-  margin-top: 60px;
+  margin-top: 48px;
 }
 
 .blog_post {
-    display: grid;
+  display: grid;
 }
 
 .blog_post > h1 {
-	font-size: 1.4em;
+  font-size: 1.4em;
   grid-area: 1 / 1 / span 1 / span 2;
   align-self: center;
-	text-wrap: wrap;
+  text-wrap: wrap;
+  margin-top: 12px;
 }
 
 /* smallest viewport first, then md and large */
