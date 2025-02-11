@@ -1,5 +1,5 @@
 Another blog post for testing
-images/tc.png
+/images/tc.png
 This is a second test blog post. I'm going to deploy this to my static site host to make sure their
 web server treats it how I expect it to be treated.
 

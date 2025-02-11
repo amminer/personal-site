@@ -18,7 +18,7 @@ from typing import Dict
 
 
 BLOG_SRC_DIR = "blog_src/"
-BLOG_POSTS_DIR = "blog_posts/"
+BLOG_POSTS_DIR = "blog/"
 BLOG_TEMPLATE_FILEPATH = "templates/blog.html"
 BLOG_OUTPUT_FILEPATH = "blog.html"
 
@@ -30,8 +30,11 @@ post_datestamps_and_contents: Dict[str, str] = {}  # {post_datestring: rendered_
 blog_post_source_files = os.listdir(BLOG_SRC_DIR)
 blog_post_source_files.reverse()
 
+with open(BLOG_TEMPLATE_FILEPATH, "r") as template_file:
+    raw_text = template_file.read()
+    template = Template(raw_text)
+
 for i, textfile in enumerate(blog_post_source_files):
-    one_indexed = i + 1
     post_datestring = textfile[:-4]
     with open(os.path.join(BLOG_SRC_DIR, textfile), 'r') as rf:
         post_title = rf.readline()[:-1]
@@ -40,10 +43,11 @@ for i, textfile in enumerate(blog_post_source_files):
         post_rawtext = "".join(rf.readlines())
 
     # construct html for sidebar link list, post contents
+    # TODO embed this in each blog post's page document (iframe?) instead of one copy per blog post
     sidebar_links.append(
         f'''
             <a id="{post_datestring}" class="sidebar_item sidebar_link nav-link"
-            style="pointer-events: auto" href="#top">
+            style="pointer-events: auto" href="/{os.path.join(BLOG_POSTS_DIR, post_datestring)}.html">
             • {post_datestring}
             <br/> &nbsp&nbsp {post_title_abbreviated}
             </a>
@@ -51,24 +55,26 @@ for i, textfile in enumerate(blog_post_source_files):
     )
 
     rendered_post_content =\
-        f'''<div class="blog_post" id="blog_post_{one_indexed}">
+        f'''<div class="blog_post">
             <h1 class="blog_post_title"> {post_title} </h1>
             <img class="blog_post_image" src="{post_imagepath}"/>
             <p class="blog_post_text"> {post_rawtext} </p>
         </div>'''
     post_datestamps_and_contents[post_datestring] = rendered_post_content
 
+# TODO move this back into the previous for loop once sidebar is embedded instead of copied
+for post_datestring, post_content in post_datestamps_and_contents.items():
+    rendered_page = template.render(
+        post_list_items="\n".join(sidebar_links),
+        current_post_content=post_content)
+
     postfile = os.path.join(BLOG_POSTS_DIR, post_datestring + '.html')
     with open(postfile, "w") as wf:
-        _ = wf.write(rendered_post_content)
+        _ = wf.write(rendered_page)
 
-# insert blog list and post contents into template page
-with open(BLOG_TEMPLATE_FILEPATH, "r") as template_file:
-    raw_text = template_file.read()
-    template = Template(raw_text)
 blog_home_rendered_html = template.render(
-        post_list_items="\n".join(sidebar_links),
-        current_post_content=list(post_datestamps_and_contents.values())[0]
+    post_list_items="\n".join(sidebar_links),
+    current_post_content=list(post_datestamps_and_contents.values())[0]
 )
 
 # write rendered homepage to blog.html

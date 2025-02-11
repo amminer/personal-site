@@ -44,21 +44,6 @@ $('#expand_sidebar_button').click((event) => {
   }
 });
 
-$('.sidebar_item').click((event) => {
-    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-    let post_date_string = event.target.id;
-    console.log('fetching post from ' + post_date_string + '...');
-    if (sidebar_is_expanded() && vw < 992) {
-        collapse_sidebar();
-    }
-    let filepath = '../blog_posts/' + post_date_string + '.html';
-    fetch(filepath)
-        .then(response => response.text())
-        .then(html => {
-            post_container.innerHTML = html;
-    });
-});
-
 let pvw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 window.addEventListener('resize', function() {
   let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);

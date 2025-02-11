@@ -69,13 +69,43 @@
         TODO make sidebar collapsible-->
         <div id="sidebar">
             <a id="home_link" class="sidebar_item" href="/index.html"> ← ⌂ </a>
-            {{ post_list_items }}
+            
+            <a id="2025-02-11" class="sidebar_item sidebar_link nav-link"
+            style="pointer-events: auto" href="/blog/2025-02-11.html">
+            • 2025-02-11
+            <br/> &nbsp&nbsp A Note To Every Friend Wh...
+            </a>
+        
+
+            <a id="2025-02-01" class="sidebar_item sidebar_link nav-link"
+            style="pointer-events: auto" href="/blog/2025-02-01.html">
+            • 2025-02-01
+            <br/> &nbsp&nbsp Another blog post for tes...
+            </a>
+        
+
+            <a id="2025-01-31" class="sidebar_item sidebar_link nav-link"
+            style="pointer-events: auto" href="/blog/2025-01-31.html">
+            • 2025-01-31
+            <br/> &nbsp&nbsp Test Blog Post Title
+            </a>
+        
         </div>
         <span id="sidebar_expander" class="navbar-toggler-icon themed-icon">
           <button id="expand_sidebar_button"></button>
         </span>
         <div id="post_container">
-            {{ current_post_content }}
+            <div class="blog_post">
+            <h1 class="blog_post_title"> Test Blog Post Title </h1>
+            <img class="blog_post_image" src="/images/bice.jpg"/>
+            <p class="blog_post_text"> This is a test blog post. I intend to use the first line as the title, the second line as a filename
+for an image if any, and the rest of the file as the post content. I hope that raw HTML can be
+included in the post content to make things potentially very spicy. Let's see if it works.
+
+<br/><br/><span style="color: red;">It really is just HTML in here!</span>
+Cool.
+ </p>
+        </div>
         </div>
 	</body>
 

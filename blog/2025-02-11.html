@@ -1,4 +1,101 @@
-<div class="blog_post" id="blog_post_1">
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Amelia's Blog</title>
+		<meta
+		  name="description"
+		  content="Amelia Miner's blog"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	  <link rel="stylesheet" href="index.css" />
+	  <link rel="stylesheet" href="../index.css" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- sidebar expander (depends on JQuery) -->
+    <script src="./scripts/blog_sidebar.js" defer></script>
+    <!-- other stuff -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+	</head>
+
+	<body id="blog_body">
+		<!--
+		|````````````````````````|
+		|*~ |  ~~~~~~~~   [```]  |
+		|*~ |  `  `` `    [___]  |
+		|*~ |   -------------    |
+		|*~ |  --------------    |
+		|*~ |  ---------         |
+		|*~ |   -------------    |
+		|*~ |  --------------    |
+		``````````````````````````
+        TODO make sidebar collapsible-->
+        <div id="sidebar">
+            <a id="home_link" class="sidebar_item" href="/index.html"> ← ⌂ </a>
+            
+            <a id="2025-02-11" class="sidebar_item sidebar_link nav-link"
+            style="pointer-events: auto" href="/blog/2025-02-11.html">
+            • 2025-02-11
+            <br/> &nbsp&nbsp A Note To Every Friend Wh...
+            </a>
+        
+
+            <a id="2025-02-01" class="sidebar_item sidebar_link nav-link"
+            style="pointer-events: auto" href="/blog/2025-02-01.html">
+            • 2025-02-01
+            <br/> &nbsp&nbsp Another blog post for tes...
+            </a>
+        
+
+            <a id="2025-01-31" class="sidebar_item sidebar_link nav-link"
+            style="pointer-events: auto" href="/blog/2025-01-31.html">
+            • 2025-01-31
+            <br/> &nbsp&nbsp Test Blog Post Title
+            </a>
+        
+        </div>
+        <span id="sidebar_expander" class="navbar-toggler-icon themed-icon">
+          <button id="expand_sidebar_button"></button>
+        </span>
+        <div id="post_container">
+            <div class="blog_post">
             <h1 class="blog_post_title"> A Note To Every Friend Who Needs It </h1>
             <img class="blog_post_image" src="https://i.redd.it/xynxno6nfyq71.jpg"/>
             <p class="blog_post_text"> How is your little slice of this moment treating you? A lot of us could be better off right now.
@@ -62,3 +159,7 @@ culture of humans has very little room for complacency toward unkindness. Rememb
 as you would wish to be treated. I'll see you out there at work. Keep in touch and stay true.
  </p>
         </div>
+        </div>
+	</body>
+
+</html>
